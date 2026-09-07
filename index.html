@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thrift Store by Nawab | Premium Archival & Vintage Recommerce | Bettiah, Bihar</title>
+  <meta name="description" content="Curated thrift fashion in Bettiah, Bihar. Steam-sanitized, one-of-a-kind vintage drops, graphic tees, denim jackets, and wholesale reseller bundles shipped across India."/>
+  
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "primary": "#641C2D",
+            "primary-hover": "#4a1421",
+            "secondary-dark": "#3A241F",
+            "accent": "#B08A4A",
+            "background": "#F7F1E7",
+            "surface-sand": "#EFE4D2",
+            "card-bg": "#FFFDF8",
+            "border-soft": "#D8C8B5",
+            "hover-bg": "#E9DCC9",
+            "text-main": "#24201E",
+            "text-secondary": "#77706A"
+          },
+          "borderRadius": {
+            "DEFAULT": "0px",
+            "lg": "0px",
+            "xl": "0px",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-3xs": "0.125rem",
+            "space-2xs": "0.25rem",
+            "space-xs": "0.5rem",
+            "space-sm": "0.75rem",
+            "space-md": "1rem",
+            "space-lg": "1.5rem",
+            "space-xl": "2rem",
+            "space-2xl": "3rem",
+            "space-3xl": "4rem",
+            "space-4xl": "6rem",
+            "space-5xl": "8rem",
+            "gutter-mobile": "1rem",
+            "gutter-desktop": "2rem",
+            "container-max": "88rem"
+          },
+          "fontFamily": {
+            "display-hero": [ "Playfair Display", "Georgia", "serif" ],
+            "headline-xl": [ "Playfair Display", "Georgia", "serif" ],
+            "headline-lg": [ "Playfair Display", "Georgia", "serif" ],
+            "headline-md": [ "Playfair Display", "Georgia", "serif" ],
+            "headline-sm": [ "Playfair Display", "Georgia", "serif" ],
+            "title-editorial": [ "Playfair Display", "Georgia", "serif" ],
+            "body-lg": [ "Plus Jakarta Sans", "sans-serif" ],
+            "body-md": [ "Plus Jakarta Sans", "sans-serif" ],
+            "body-sm": [ "Plus Jakarta Sans", "sans-serif" ],
+            "caption": [ "Plus Jakarta Sans", "sans-serif" ],
+            "label-uppercase": [ "Plus Jakarta Sans", "sans-serif" ],
+            "label-price": [ "Plus Jakarta Sans", "sans-serif" ]
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-background font-body-md text-text-main antialiased selection:bg-surface-sand selection:text-text-main">
+
+  <!-- STICKY HEADER -->
+  <header class="fixed top-0 left-0 w-full z-40 bg-[#F7F1E7]/95 backdrop-blur-md border-b border-border-soft/60 shadow-[0_1px_8px_rgba(0,0,0,0.03)]">
+    <!-- Announcement Bar -->
+    <div class="bg-primary text-[#F7F1E7] py-space-2xs px-gutter-mobile md:px-gutter-desktop text-center">
+      <p class="font-label-uppercase text-label-uppercase tracking-widest uppercase text-accent font-semibold">
+        PREMIUM BRANDED THRIFT • FRESH DROPS • BETTIAH, BIHAR
+      </p>
+    </div>
+    <!-- Main Header Bar -->
+    <div class="h-20 max-w-container-max mx-auto px-gutter-mobile md:px-gutter-desktop flex items-center justify-between">
+      <div class="flex items-center gap-space-md">
+        <a class="flex items-center gap-space-sm text-decoration-none" href="#">
+          <img alt="Thrift Store By Nawab Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Vu8ZSxYBZ961lzpVgY4nwICwNViIfaI8F5xKiYVRo9GASH1y5a9Z3rbZkB6XqS_UHJuaSEnvWSl6AmPh2nzuw8qEyGI4LJIezZOnM6cSyM71rbA_7dngYdSILXb7KoMFQrClVaMRqgsHLn8EH5Emn9F9i76scf7b8f7v6mPRvLrfLNFffWSMFxyyZvhnQG3lavM65rfTleclKh3hnPfsRHJgbE45m9iBzSOSlnR_8iPCNEBzadnfw9sT0"/>
+          <div class="flex flex-col">
+            <span class="font-title-editorial text-title-editorial tracking-wider text-text-main font-semibold uppercase">Thrift Store By Nawab</span>
+            <span class="font-caption text-caption text-text-secondary tracking-widest uppercase hidden sm:inline">Bettiah • Archival Recommerce</span>
+          </div>
+        </a>
+      </div>
+      <!-- Nav Links -->
+      <nav class="hidden lg:flex items-center gap-space-xl" id="desktop-nav">
+        <a aria-current="page" class="nav-link active transition-colors py-space-xs font-label-uppercase text-label-uppercase uppercase text-primary font-bold border-b-2 border-primary" href="#">Home</a>
+        <a class="nav-link font-label-uppercase text-label-uppercase text-text-secondary hover:text-primary transition-colors py-space-xs uppercase" href="#category-section">Shop</a>
+        <a class="nav-link font-label-uppercase text-label-uppercase text-text-secondary hover:text-primary transition-colors py-space-xs uppercase" href="#arrivals-section">Collections</a>
+        <a class="nav-link font-label-uppercase text-label-uppercase text-text-secondary hover:text-primary transition-colors py-space-xs uppercase" href="#wholesale-section">Wholesale</a>
+        <a class="nav-link font-label-uppercase text-label-uppercase text-text-secondary hover:text-primary transition-colors py-space-xs uppercase" href="#manifesto-section">About Us</a>
+        <a class="nav-link font-label-uppercase text-label-uppercase text-text-secondary hover:text-primary transition-colors py-space-xs uppercase" href="#footer-section">Contact</a>
+      </nav>
+      <!-- Action Icons -->
+      <div class="flex items-center gap-space-sm md:gap-space-md">
+        <button id="open-search-btn" aria-label="Search catalog" class="p-space-xs text-text-secondary hover:text-text-main transition-colors cursor-pointer" type="button">
+          <span class="material-symbols-outlined text-[22px]">search</span>
+        </button>
+        <button id="open-wishlist-btn" aria-label="Wishlist" class="relative p-space-xs text-text-secondary hover:text-text-main transition-colors cursor-pointer" type="button">
+          <span class="material-symbols-outlined text-[22px]">favorite</span>
+          <span id="wishlist-badge" class="absolute top-1 right-1 w-4 h-4 rounded-full bg-primary text-[#F7F1E7] font-caption text-[10px] leading-none flex items-center justify-center font-bold">2</span>
+        </button>
+        <button id="open-cart-btn" aria-label="Open cart" class="relative p-space-xs text-text-secondary hover:text-text-main transition-colors cursor-pointer" type="button">
+          <span class="material-symbols-outlined text-[22px]">shopping_bag</span>
+          <span id="cart-badge" class="absolute top-1 right-1 w-4 h-4 rounded-full bg-primary text-[#F7F1E7] font-caption text-[10px] leading-none flex items-center justify-center font-bold">1</span>
+        </button>
+        <div class="pl-space-2xs">
+          <div class="w-8 h-8 rounded-full bg-secondary-dark flex items-center justify-center hover:bg-primary transition-colors cursor-pointer">
+            <span class="material-symbols-outlined text-[#F7F1E7] text-[18px]">person</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="w-full pt-20 bg-background main-content">
+    <div class="flex flex-col w-full">
+
+      <!-- 1. HERO SECTION -->
+      <section class="relative w-full px-gutter-mobile md:px-gutter-desktop py-space-xl md:py-space-3xl max-w-container-max mx-auto">
+        <div class="relative w-full overflow-hidden bg-surface-sand border border-border-soft shadow-md">
+          <div class="relative min-h-[560px] md:min-h-[680px] w-full flex flex-col justify-between p-space-lg md:p-space-3xl">
+            <img alt="Curated thrift fashion models wearing vintage tees and authentic denim" class="absolute inset-0 w-full h-full object-cover object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDA-VzjdMIsomoi2N2qFqPRUM_TKZ1R-OMnk4EmGrkhovsTI4xms6R4W6hs3FuYCk1i-mXriXVBgAFOpA-P7fIBl1qX3Xzvwv_WF-uw5jcVmf9L5JSA0bHT4N_SiJrEIeaSUFKre2dZN2NQ3kYwEu5K8XxoulOZiYN8csY__XEhiCMfOOxTCtnCJIvQi6eIZEN9SluTVXtwGaeycKkTKOtUeZ2IUGyWrG7dujAyhvPy4fun8RySaK4n"/>
+            <!-- Editorial Scrim Overlay -->
+            <div class="absolute inset-0 bg-gradient-to-t from-secondary-dark/90 via-secondary-dark/40 to-transparent"></div>
+            <div class="absolute inset-0 bg-primary/20 backdrop-[1px]"></div>
+            
+            <!-- Top Header Meta -->
+            <div class="relative z-10 flex items-center justify-between">
+              <span class="font-label-uppercase text-label-uppercase text-[#F7F1E7] bg-secondary-dark/70 border border-accent/40 backdrop-blur-md px-space-md py-space-xs uppercase tracking-widest">
+                BETTIAH • BIHAR • INDIA
+              </span>
+              <span class="font-caption text-caption text-[#F7F1E7]/80 hidden md:inline tracking-widest uppercase">
+                ARCHIVAL DROP No. 42 / AUTUMN-WINTER
+              </span>
+            </div>
+
+            <!-- Main Copy & Action Buttons -->
+            <div class="relative z-10 max-w-2xl flex flex-col gap-space-md pt-space-4xl">
+              <div class="flex flex-col gap-space-2xs">
+                <span class="font-label-uppercase text-label-uppercase text-accent tracking-[0.2em] uppercase font-semibold">
+                  THRIFT STORE BY NAWAB
+                </span>
+                <h1 class="font-headline-xl text-headline-xl md:font-display-hero md:text-display-hero text-[#F7F1E7] tracking-tight font-normal">
+                  PREMIUM THRIFT.<br/><span class="italic font-light text-accent">ICONIC STYLE.</span>
+                </h1>
+              </div>
+              <p class="font-body-lg text-body-lg text-[#F7F1E7]/90 max-w-xl font-normal leading-relaxed">
+                Curated thrift fashion for people who want standout style without the retail price. Hand-picked, steam-sanitized, one-of-a-kind drops from Bettiah to all of India.
+              </p>
+              <div class="flex flex-wrap items-center gap-space-md pt-space-xs">
+                <a class="h-12 px-space-xl bg-primary text-[#F7F1E7] hover:bg-primary-hover border border-accent/40 transition-colors flex items-center justify-center font-label-uppercase text-label-uppercase uppercase tracking-widest shadow-sm" href="#arrivals-section">
+                  SHOP NEW DROPS
+                </a>
+                <a class="h-12 px-space-xl bg-secondary-dark/60 backdrop-blur-md text-[#F7F1E7] border border-border-soft hover:bg-secondary-dark transition-colors flex items-center justify-center font-label-uppercase text-label-uppercase uppercase tracking-widest" href="#category-section">
+                  EXPLORE COLLECTIONS
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. SHOP BY CATEGORY -->
+      <section id="category-section" class="w-full px-gutter-mobile md:px-gutter-desktop py-space-3xl max-w-container-max mx-auto">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-space-2xl gap-space-sm">
+          <div class="flex flex-col gap-space-3xs">
+            <span class="font-label-uppercase text-label-uppercase text-accent tracking-widest uppercase font-semibold">CATALOGUE DIVISION</span>
+            <h2 class="font-headline-lg text-headline-lg text-text-main">SHOP BY CATEGORY</h2>
+            <p class="font-body-md text-body-md text-text-secondary">Find your next favourite piece from rare vintage cuts to relaxed tailoring.</p>
+          </div>
+          <a class="font-label-uppercase text-label-uppercase text-primary hover:text-accent inline-flex items-center gap-space-xs uppercase tracking-widest group font-semibold transition-colors" href="#arrivals-section">
+            View All Archives
+            <span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+          </a>
+        </div>
+        <!-- 7 Category Cards -->
+        <div class="category-grid">
+          <!-- Item 1: T-Shirts -->
+          <a class="category-card group" href="#arrivals-section">
+            <div class="category-image-wrap">
+              <img alt="Folded vintage 90s graphic t-shirts" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsPSMZLEGMfXCHrK7o3NO4A7jA7dCRO4uW8wISSbGqp7tMh9cKz5rNUTDU4WDdIabMtjz23aaUa2OEsJrBd-RXmgYpM8jhn7cEg3JWTcH3JJXPRIAdLisJaBVXGlPTg2iSYrCpd2s9LWylYT3_pmBidZbPnKC1-p6t1RYaVlDLyUubw7HNpxjdhlJOQMNrq8G63zkEpl5j2Q6i4JYSUpET9g-i7Ah0Q5lH2huO2-XeiURyC4nlO93l"/>
+              <span class="category-count">48 pcs</span>
+            </div>
+            <div class="category-meta">
+              <span class="font-title-editorial text-title-editorial text-text-main font-semibold group-hover:text-primary transition-colors">T-Shirts</span>
+              <span class="font-caption text-caption text-text-secondary">90s & Y2K Graphics</span>
+            </div>
+          </a>
+          <!-- Item 2: Shirts -->
+          <a class="category-card group" href="#arrivals-section">
+            <div class="category-image-wrap">
+              <img alt="Relaxed linen and vintage cotton flannel shirts on a boutique rack" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpsqzHDak2fL1zwUUbQEZ_ADgzX962dZAUije30v9MOI5lPpbqpqATGX4SAFRbqEzwA6hM9_KiUm9csDVWTc8VyXfeM-E4f0PHBKFwEzH9dxqN6w9OpRZhu4xuZtFRECZOccn-5_KFThD7QHZUyWvILtrxZ-LtRwF-yCHozVvKPl0Bd5Q5TikDWlEVIsnUX7BACM6Z_v9nMk_fS9aH0niHZgdWhF0gmc7bYeGK6bYWkG4wuRZne-IQ"/>
+              <span class="category-count">34 pcs</span>
+            </div>
+            <div class="category-meta">
+              <span class="font-title-editorial text-title-editorial text-text-main font-semibold group-hover:text-primary transition-colors">Shirts</span>
+              <span class="font-caption text-caption text-text-secondary">Linens & Flannels</span>
+            </div>
+          </a>
+          <!-- Item 3: Jeans -->
+          <a class="category-card group" href="#arrivals-section">
+            <div class="category-image-wrap">
+              <img alt="Stack of authentic washed denim jeans folded on a bench" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAz1iuMLO9UdQfaA3W0lnShPQCskTdNuEKBuxN6brSKYUkrl1eYV09KmkDcNyGHQvyN_QaBeS7o-da1f844x4KRW-ObzC1WB4yLIsnB9mx9sQ2qOtLMeuMIXY3_N_cJhzy6n49SqqULtIpOzaK4Tb55VqIvweCx5bSDbGTQK9w1KvpPTJoeD_ud6HR6VT8Q__RB9DxJqUehvun9P2VVblsXIswr8lSPVuk0hhrTRF5frh_RtY7LSvSn"/>
+              <span class="category-count">52 pcs</span>
+            </div>
+            <div class="category-meta">
+              <span class="font-title-editorial text-title-editorial text-text-main font-semibold group-hover:text-primary transition-colors">Jeans</span>
+              <span class="font-caption text-caption text-text-secondary">Straight & Baggy</span>
+            </div>
+          </a>
+          <!-- Item 4: Jackets -->
+          <a class="category-card group" href="#arrivals-section">
+            <div class="category-image-wrap">
+              <img alt="Vintage chore jacket and bomber jacket hanging" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-O42YA7HFkxOUv7-CNP0JpwqLW1rD4ssk2Ott2dwC9IjyxPJ6rp1ejQAFsRPEYlARtPAjJGiR8nI5vcM9QbsA7fyEZKy2i8Arbbe6X3qzMWL_Mzv1mhVZ2EI2oRVzv96x1aSO-1IBgJ3tePPQ08k1NPrsD01UaUMejvfFqV1PEB4hPKRTfgds_kiUXvSH28XPEYaBaIV99WWfJKgc4RA00GJ-TZUW8YDe1w9B8iUk7xQb-OPDOqzs"/>
+              <span class="category-count">29 pcs</span>
+            </div>
+            <div class="category-meta">
+              <span class="font-title-editorial text-title-editorial text-text-main font-semibold group-hover:text-primary transition-colors">Jackets</span>
+              <span class="font-caption text-caption text-text-secondary">Workwear & Leather</span>
+            </div>
+          </a>
+          <!-- Item 5: Sweaters -->
+          <a class="category-card group" href="#arrivals-section">
+            <div class="category-image-wrap">
+              <img alt="Heavy cable knit vintage sweater" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANpWdYwrnpSGTVVdoRA6SZEw5P8C_GTm3BwzR4tg2ABngEscOhITFwRf5i9ceEC0-_N3RWXS_6cIqHCsa9odKFF832GMK8lB_vOMO9PPf-1FgKlIzm8H4rwb2Up7C59L_CfrqY_qGAweQ5iElGc60CGsgyU6fTSlvqvhGgZvovr26qZrmoRPIeQTqakezQV29oEv54IAamt4qUZHNB8o2Xmc1V6u8nCTiYC9ypbVYI6NICdw_CNnqY"/>
+              <span class="category-count">23 pcs</span>
+            </div>
+            <div class="category-meta">
+              <span class="font-title-editorial text-title-editorial text-text-main font-semibold group-hover:text-primary transition-colors">Sweaters</span>
+              <span class="font-caption text-caption text-text-secondary">Wool & Cashmere</span>
+            </div>
+          </a>
+          <!-- Item 6: Sneakers -->
+          <a class="category-card group" href="#arrivals-section">
+            <div class="category-image-wrap">
+              <img alt="Pair of clean retro trainers on warm hardwood flooring" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADtu0vXyYa-Wj80ncW_HJnIpS4OmGzoU0sZLlu9I7qvvuUO0mlD3w8V1_2qLOyz4Jqzx2YgvYRpngQlPD8s1MnWyPmqroXAwfHmlApEp4P-uf1gWYlwLtexUl1HlgujTx9xVXP8QgljJZUO7z1wkRcL9FSqbApU9rNfVlKC8_WKMbDINervrxfx-Jrt2nDnhA1TYXr-oUOWSFCs81NXhzYk0VP-5NwXirnbEshZn75i_tqIuFqfbmP"/>
+              <span class="category-count">19 pairs</span>
+            </div>
+            <div class="category-meta">
+              <span class="font-title-editorial text-title-editorial text-text-main font-semibold group-hover:text-primary transition-colors">Sneakers</span>
+              <span class="font-caption text-caption text-text-secondary">Retro & Court</span>
+            </div>
+          </a>
+          <!-- Item 7: Accessories -->
+          <a class="category-card group" href="#arrivals-section">
+            <div class="category-image-wrap">
+              <img alt="Vintage leather belts and archival silver jewelry" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_gzZHlRKSfhpWL7I1s-2AM6qu2XDzZvgCwoPqjC_hWOEhdSdms5jCJxuCMdLE23sB_KnKt2nNR6cPX6kbFuAH7zTtKGiT1ykoFibGyoIzwFeM4Nz-aTXkXpapK-XBi8WJ0MQljlTMz0CYsRSnu7vPRctQox9l2XABR-kZUJOtSq_odaYGuv3AY432u7aiZqq1o_IIIu3bxj8DalvcyfZ35ujNdAGv3DXK6X61z2l2cjkC09M3k8jl"/>
+              <span class="category-count">40 pcs</span>
+            </div>
+            <div class="category-meta">
+              <span class="font-title-editorial text-title-editorial text-text-main font-semibold group-hover:text-primary transition-colors">Accessories</span>
+              <span class="font-caption text-caption text-text-secondary">Belts, Caps & Bags</span>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- 3. NEW ARRIVALS ('FRESH FROM THE THRIFT') -->
+      <section id="arrivals-section" class="w-full px-gutter-mobile md:px-gutter-desktop py-space-4xl max-w-container-max mx-auto">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-space-2xl gap-space-sm">
+          <div class="flex flex-col gap-space-3xs">
+            <span class="font-label-uppercase text-label-uppercase text-accent tracking-widest uppercase font-semibold">WEEKLY ARCHIVAL RELEASE</span>
+            <h2 class="font-headline-lg text-headline-lg text-text-main">FRESH FROM THE THRIFT</h2>
+            <p class="font-body-md text-body-md text-text-secondary">Handpicked pieces. Limited quantities. Every garment cleaned, pressed and verified.</p>
+          </div>
+          <div class="flex items-center gap-space-xs">
+            <span class="font-caption text-caption text-text-secondary pr-space-xs">Curated Drop 18</span>
+            <button aria-label="Previous" class="w-10 h-10 bg-surface-sand border border-border-soft flex items-center justify-center text-text-main hover:bg-hover-bg transition-colors cursor-pointer" type="button">
+              <span class="material-symbols-outlined text-[20px]">west</span>
+            </button>
+            <button aria-label="Next" class="w-10 h-10 bg-surface-sand border border-border-soft flex items-center justify-center text-text-main hover:bg-hover-bg transition-colors cursor-pointer" type="button">
+              <span class="material-symbols-outlined text-[20px]">east</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 8 Product Cards Grid -->
+        <div class="product-grid">
+          <!-- Card 1 -->
+          <div class="product-card group" data-title="Vintage Graphic T-Shirt" data-price="399" data-code="Bettiah Archive #91">
+            <div class="product-image-container">
+              <img alt="Vintage 90s faded black graphic band t-shirt" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCB4MjpNfhh0fTi5knODgYqgFraZOKzgqksIbD9DoVxKE_5rXOy3_tIZy-RFgb4B_pFIO72-k8npX4gtt3Tg6qHRob3RRVFTgBlhhWpxgIO4SrK_eASw5zRPA1VG7mTb9hKg_my793swa92MrnXwDhY18IX8KuY4YQdBTgSWsomvkj0kZH6rC-zh3Y2CmKRVxTHUHt4GLHq888Bp5lxihVnFUhG93jnMCHcK5dm6_6SPOfVWoPwczFL"/>
+              <button aria-label="Save to wishlist" class="wishlist-btn" type="button">
+                <span class="material-symbols-outlined text-[20px]">favorite</span>
+              </button>
+              <span class="condition-badge font-caption text-caption">Condition: Very Good</span>
+            </div>
+            <div class="product-info">
+              <div class="flex flex-col gap-space-3xs">
+                <span class="font-label-uppercase text-label-uppercase text-accent uppercase font-medium">Bettiah Archive #91</span>
+                <h3 class="font-title-editorial text-title-editorial text-text-main font-medium">Vintage Graphic T-Shirt</h3>
+              </div>
+              <div class="pt-space-md flex items-center justify-between">
+                <span class="font-label-price text-label-price text-text-main font-semibold">₹399</span>
+                <button class="add-to-bag-btn" type="button">Add to Bag</button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="product-card group" data-title="Premium Cotton Shirt" data-price="599" data-code="Bettiah Archive #114">
+            <div class="product-image-container">
+              <img alt="Beige brushed premium oxford cotton shirt" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9UeDWimgViOAVmpfCcR2jGWjlP3gYU8Rs-ChefW6iF-ObXdpciLEBfitSUIjPXFrvjun4YjrF2j0CN49qQfNjxoQulHM9EMwEp4a4ZnTQ9T1b764t5Lb1bMuiHKhJ-CVkY3i7eiPWgrSGT6XX0_SxWSEyTw9CmI8kpi-iseElhw6uBngACpOihkWZhkzKWXna-oprl3hQZIc0KkMIktewvEb9o76gWxQzlT_M8Gwe_xEA49w3yh9Z"/>
+              <button aria-label="Save to wishlist" class="wishlist-btn" type="button">
+                <span class="material-symbols-outlined text-[20px]">favorite</span>
+              </button>
+              <span class="condition-badge font-caption text-caption">Condition: Excellent</span>
+            </div>
+            <div class="product-info">
+              <div class="flex flex-col gap-space-3xs">
+                <span class="font-label-uppercase text-label-uppercase text-accent uppercase font-medium">Bettiah Archive #114</span>
+                <h3 class="font-title-editorial text-title-editorial text-text-main font-medium">Premium Cotton Shirt</h3>
+              </div>
+              <div class="pt-space-md flex items-center justify-between">
+                <span class="font-label-price text-label-price text-text-main font-semibold">₹599</span>
+                <button class="add-to-bag-btn" type="button">Add to Bag</button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="product-card group" data-title="Classic Denim Jeans" data-price="699" data-code="Bettiah Archive #202">
+            <div class="product-image-container">
+              <img alt="Classic medium-wash relaxed straight-leg denim jeans" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDY_fdrP8WDl0PZM6_Ct-Id89mX2Z49hauP1uecXYFNPdBSGPRsIZQJLF3b6gimWv04ZfQ1zkargcnPmD2if4g6oHGsAOFftO4-wimTKZx6HEV8h_lAzHa8jtrTRPyaRkJpojqhGSK0aCfXWAH7SKhNNtuNrInjRPOjeEfho7m_OgBj9aylcZV-j3_fAGjyMLkk48oIS8v5MuOvHMxDTssYzejOtf0Ir7kmK0Q7qinQUZgTn2Nr0uir"/>
+              <button aria-label="Save to wishlist" class="wishlist-btn" type="button">
+                <span class="material-symbols-outlined text-[20px]">favorite</span>
+              </button>
+              <span class="condition-badge font-caption text-caption">Condition: Very Good</span>
+            </div>
+            <div class="product-info">
+              <div class="flex flex-col gap-space-3xs">
+                <span class="font-label-uppercase text-label-uppercase text-accent uppercase font-medium">Bettiah Archive #202</span>
+                <h3 class="font-title-editorial text-title-editorial text-text-main font-medium">Classic Denim Jeans</h3>
+              </div>
+              <div class="pt-space-md flex items-center justify-between">
+                <span class="font-label-price text-label-price text-text-main font-semibold">₹699</span>
+                <button class="add-to-bag-btn" type="button">Add to Bag</button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="product-card group" data-title="Oversized Streetwear Tee" data-price="499" data-code="Bettiah Archive #77">
+            <div class="product-image-container">
+              <img alt="Heavyweight cream boxy oversized streetwear t-shirt" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVmPSQWXyGuLrDIjspPcjIeck0M-DtU4T59v6S-lS2umSyjnOAd6aLT69ZqnEE6KUFfu_sJX2pdO13uggOvBu9eD_XE3badyl_63AVx3Oo5Uf6NXEsJNaN-Mi_FYkjyrTmNP_xN9FnThoxCUj_X2vpxH5HIGdjlsosyyhycVTha45njVNXvXq2QNQvp6KGHRVcr8IqzM5kcr4MR9PvoxM1-0LQxJCPQtWXrRsXikDWZSeeH7gom6l6"/>
+              <button aria-label="Save to wishlist" class="wishlist-btn" type="button">
+                <span class="material-symbols-outlined text-[20px]">favorite</span>
+              </button>
+              <span class="condition-badge font-caption text-caption">Condition: Excellent</span>
+            </div>
+            <div class="product-info">
+              <div class="flex flex-col gap-space-3xs">
+                <span class="font-label-uppercase text-label-uppercase text-accent uppercase font-medium">Bettiah Archive #77</span>
+                <h3 class="font-title-editorial text-title-editorial text-text-main font-medium">Oversized Streetwear Tee</h3>
+              </div>
+              <div class="pt-space-md flex items-center justify-between">
+                <span class="font-label-price text-label-price text-text-main font-semibold">₹499</span>
+                <button class="add-to-bag-btn" type="button">Add to Bag</button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 5 -->
+          <div class="product-card group" data-title="Vintage Knit Sweater" data-price="799" data-code="Bettiah Archive #312">
+            <div class="product-image-container">
+              <img alt="Textured vintage knit wool sweater in rich oatmeal color" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAisK6xVvOiWXfM-ZRI6L_bJnr3R3iwsTaiQo4MBJ8qNYfVaBZuwJpEAhRJk1sfyJ0_efnxp6L-dF5Xk3T0CkXh0ZiSxLo9fmAUwIOc2Y7wcoJ_UglAciw7W6Knt9KFmUZIOPUB2yJyMeZxMrhHDQJ1HtDcj8FzN170qfOFphT3ArN2KsJhFvFZyTKiV9RJV9ocQWVrCtkX0_KKAvSMKtt2RsiO25b-5_OU3Olf0Uq0F7G-b6UyFGI-"/>
+              <button aria-label="Save to wishlist" class="wishlist-btn" type="button">
+                <span class="material-symbols-outlined text-[20px]">favorite</span>
+              </button>
+              <span class="condition-badge font-caption text-caption">Condition: Good</span>
+            </div>
+            <div class="product-info">
+              <div class="flex flex-col gap-space-3xs">
+                <span class="font-label-uppercase text-label-uppercase text-accent uppercase font-medium">Bettiah Archive #312</span>
+                <h3 class="font-title-editorial text-title-editorial text-text-main font-medium">Vintage Knit Sweater</h3>
+              </div>
+              <div class="pt-space-md flex items-center justify-between">
+                <span class="font-label-price text-label-price text-text-main font-semibold">₹799</span>
+                <button class="add-to-bag-btn" type="button">Add to Bag</button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 6 -->
+          <div class="product-card group" data-title="Retro Track Jacket" data-price="899" data-code="Bettiah Archive #88">
+            <div class="product-image-container">
+              <img alt="Retro 90s nylon windbreaker track jacket" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOK1sstcNFecahM6I9MRrx3-lO9uUwk165s1bK3KLFw6OxukRT3n0xWU433DjbpY53lYWeaMXVF66T-XKkB6VoJ7HcVWKWyWTcK0uXJZ9uejAEs8MkJRkJP_pGUgl8Au2ifXiO6VKU7xmBkZsGbjXhzcIsTEpUBYEGIOsSFy9Vm6WajQux9RLYXVcriDZoiFVSCvTJZ_gCqRjoBftTHiQvmyJDqPI8xFDKpMUNzditMM5YQ4uKob53"/>
+              <button aria-label="Save to wishlist" class="wishlist-btn" type="button">
+                <span class="material-symbols-outlined text-[20px]">favorite</span>
+              </button>
+              <span class="condition-badge font-caption text-caption">Condition: Very Good</span>
+            </div>
+            <div class="product-info">
+              <div class="flex flex-col gap-space-3xs">
+                <span class="font-label-uppercase text-label-uppercase text-accent uppercase font-medium">Bettiah Archive #88</span>
+                <h3 class="font-title-editorial text-title-editorial text-text-main font-medium">Retro Track Jacket</h3>
+              </div>
+              <div class="pt-space-md flex items-center justify-between">
+                <span class="font-label-price text-label-price text-text-main font-semibold">₹899</span>
+                <button class="add-to-bag-btn" type="button">Add to Bag</button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 7 -->
+          <div class="product-card group" data-title="Classic Casual Shirt" data-price="599" data-code="Bettiah Archive #152">
+            <div class="product-image-container">
+              <img alt="Crisp tailored muted olive green casual utility shirt" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiLx2EwB75tg57sVYCQkwyjflcJYaOfwvldSflMgNYect3ytlo28o6mWo6jhx8Cox5NOLUp-Ov3aX-c2dA8rKAPVl5Ry8o8SfxV5moaJSPypGF3DMwl03SQohIA1JGd3KscniGWpROPbdsbsZDaC-maAM5E4RLvzP_WNOA97XWQ6nWbvvBkReTUm080EY8MELeHm2n_G50h889asXSdz0Fesch8DUDySTzrezt5q8PheCNimYYo6AV"/>
+              <button aria-label="Save to wishlist" class="wishlist-btn" type="button">
+                <span class="material-symbols-outlined text-[20px]">favorite</span>
+              </button>
+              <span class="condition-badge font-caption text-caption">Condition: Excellent</span>
+            </div>
+            <div class="product-info">
+              <div class="flex flex-col gap-space-3xs">
+                <span class="font-label-uppercase text-label-uppercase text-accent uppercase font-medium">Bettiah Archive #152</span>
+                <h3 class="font-title-editorial text-title-editorial text-text-main font-medium">Classic Casual Shirt</h3>
+              </div>
+              <div class="pt-space-md flex items-center justify-between">
+                <span class="font-label-price text-label-price text-text-main font-semibold">₹599</span>
+                <button class="add-to-bag-btn" type="button">Add to Bag</button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 8 -->
+          <div class="product-card group" data-title="Vintage Denim Jacket" data-price="999" data-code="Bettiah Archive #409">
+            <div class="product-image-container">
+              <img alt="Heavyweight authentic distressed trucker denim jacket" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKk8CJo049jJXRjRwEZhzvr9Sx_ckj4-TSnmD5xE15tqm8V7VBhjE_BnMdbZTl6tgZh5eL0JE8k-i4UTAUSTpodiFQ3tJLYzwrBAjgwikButTN9lXoQHeuXJmNg140jHPEgkXSq_vocwGXC_MQjIiqMltLZXqk7vNtxc56I93yZWi3Xu5MKRxqOx_J8sZC65B9OhMxGktVFbjnPWTTpR0UCkVIKxn9Nh3RtyzqPg1I-KIFMCtoDbvv"/>
+              <button aria-label="Save to wishlist" class="wishlist-btn" type="button">
+                <span class="material-symbols-outlined text-[20px]">favorite</span>
+              </button>
+              <span class="condition-badge font-caption text-caption">Condition: Very Good</span>
+            </div>
+            <div class="product-info">
+              <div class="flex flex-col gap-space-3xs">
+                <span class="font-label-uppercase text-label-uppercase text-accent uppercase font-medium">Bettiah Archive #409</span>
+                <h3 class="font-title-editorial text-title-editorial text-text-main font-medium">Vintage Denim Jacket</h3>
+              </div>
+              <div class="pt-space-md flex items-center justify-between">
+                <span class="font-label-price text-label-price text-text-main font-semibold">₹999</span>
+                <button class="add-to-bag-btn" type="button">Add to Bag</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. UNDER ₹1000 ('BEST LOOKS UNDER ₹1000') -->
+      <section class="w-full bg-surface-sand border-y border-border-soft py-space-4xl my-space-2xl">
+        <div class="max-w-container-max mx-auto px-gutter-mobile md:px-gutter-desktop">
+          <div class="flex flex-col items-center text-center max-w-2xl mx-auto mb-space-3xl gap-space-2xs">
+            <span class="font-label-uppercase text-label-uppercase text-accent uppercase tracking-[0.2em] font-semibold">CURATED COMBO LOOKBOOK</span>
+            <h2 class="font-headline-lg md:font-headline-xl text-headline-lg md:text-headline-xl text-text-main">BEST LOOKS UNDER ₹1000</h2>
+            <p class="font-body-md text-body-md text-text-secondary">
+              Complete high-fashion outfits paired by our in-house stylists in Bettiah. Effortless archival silhouettes without exceeding your budget.
+            </p>
+          </div>
+          <!-- 4 Editorial Look Cards -->
+          <div class="combo-grid">
+            <!-- Look 01 -->
+            <div class="combo-card group">
+              <div class="combo-image-wrap">
+                <img alt="Lookbook outfit styled with vintage graphic t-shirt and washed black loose jeans" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwI5NJeClTPiWYrQ2Yfus4XNBfvFJx5Pibc2YcC4wASHKJGZEXmSYgQuUijbACuHnx0d8EX_miXRzSel3lnC_m6iMVesm_dWDjGYbn2dFWWDzbQprZAPylZBiR8fvyX1o1HZ5i15vE0eTzmoDymFBWJULxMCvOGZ6WTXLf6yfb6FXHQ2q1QzQmn37xVyEC9oVxRcixk_lHOZuDnQIGOHEBypNzwUCNI0q_COYX6GLj7gunV7UnXwim"/>
+                <div class="look-tag text-text-main">LOOK 01</div>
+                <div class="price-tag">Combo ₹899</div>
+              </div>
+              <div class="p-space-lg flex flex-col flex-1 justify-between gap-space-md">
+                <div class="flex flex-col gap-space-xs">
+                  <span class="font-label-uppercase text-label-uppercase text-accent uppercase font-semibold">Casual Streetwear</span>
+                  <h3 class="font-title-editorial text-title-editorial text-text-main font-semibold">T-Shirt + Loose Jeans</h3>
+                  <p class="font-body-sm text-body-sm text-text-secondary">Individual items: ₹1,098 value. Paired with washed aesthetics.</p>
+                </div>
+                <button class="w-full py-space-sm bg-surface-sand text-text-main hover:bg-primary hover:text-[#F7F1E7] border border-border-soft transition-colors font-label-uppercase text-label-uppercase uppercase tracking-wider flex items-center justify-center gap-space-xs cursor-pointer" type="button">
+                  <span>SHOP THE LOOK</span>
+                  <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                </button>
+              </div>
+            </div>
+            <!-- Look 02 -->
+            <div class="combo-card group">
+              <div class="combo-image-wrap">
+                <img alt="Crisp structured cotton shirt over classic blue denim jeans" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5bSnUE6U2IaaTsymRJZyv2MTF0ArN1WMjHPotYnKiFd_tvnfYOTofY-I8TaQ3358j06rprtk7DsaH6csDULKOFfJHeq0DMIV6cjMmBTPqk44QFtgpHWj0I-vLsohkTMRkL64TIAjf5Cbm-zRrpd_fiHJMtxuNVHXiMp_eidnUa7FAbZvG7DeUlb7AIiMRSntsGaDgJtxnkDpLT9LSh4xRYeDDqRgi3odRoMglfW9_YFGFUvlYUVbd"/>
+                <div class="look-tag text-text-main">LOOK 02</div>
+                <div class="price-tag">Combo ₹999</div>
+              </div>
+              <div class="p-space-lg flex flex-col flex-1 justify-between gap-space-md">
+                <div class="flex flex-col gap-space-xs">
+                  <span class="font-label-uppercase text-label-uppercase text-accent uppercase font-semibold">Tailored Minimalist</span>
+                  <h3 class="font-title-editorial text-title-editorial text-text-main font-semibold">Shirt + Classic Jeans</h3>
+                  <p class="font-body-sm text-body-sm text-text-secondary">Individual items: ₹1,298 value. Verified vintage cuts.</p>
+                </div>
+                <button class="w-full py-space-sm bg-surface-sand text-text-main hover:bg-primary hover:text-[#F7F1E7] border border-border-soft transition-colors font-label-uppercase text-label-uppercase uppercase tracking-wider flex items-center justify-center gap-space-xs cursor-pointer" type="button">
+                  <span>SHOP THE LOOK</span>
+                  <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                </button>
+              </div>
+            </div>
+            <!-- Look 03 -->
+            <div class="combo-card group">
+              <div class="combo-image-wrap">
+                <img alt="Neutral knit sweater with dark pleated vintage trousers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAj8fXQlCHfQImz77DyjgNIrZcwFhGNrOONGc79zrmXtkLFrYEHwqCnDjIbp771izO3l2X3XfKMf0UpbrZj2BJIvDGwfit2ONSVn-SgeRTc-vL53_ozCHNo9hAaLaSNo9YnGR_K65TtJQzPr_jpkYt0OO3f746d5wvMi1ftbYszOcyUZcohBtCuyd7K-fGlBbwSLb1Y11x6rky8jwyCl9ANLkPEdATdq-WAujWEett_IkySP0dvb_L0"/>
+                <div class="look-tag text-text-main">LOOK 03</div>
+                <div class="price-tag">Total ₹949</div>
+              </div>
+              <div class="p-space-lg flex flex-col flex-1 justify-between gap-space-md">
+                <div class="flex flex-col gap-space-xs">
+                  <span class="font-label-uppercase text-label-uppercase text-accent uppercase font-semibold">Autumn Texture</span>
+                  <h3 class="font-title-editorial text-title-editorial text-text-main font-semibold">Sweater + Pleated Trousers</h3>
+                  <p class="font-body-sm text-body-sm text-text-secondary">Wool blend paired with relaxed smart pleats.</p>
+                </div>
+                <button class="w-full py-space-sm bg-surface-sand text-text-main hover:bg-primary hover:text-[#F7F1E7] border border-border-soft transition-colors font-label-uppercase text-label-uppercase uppercase tracking-wider flex items-center justify-center gap-space-xs cursor-pointer" type="button">
+                  <span>SHOP THE LOOK</span>
+                  <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                </button>
+              </div>
+            </div>
+            <!-- Look 04 -->
+            <div class="combo-card group">
+              <div class="combo-image-wrap">
+                <img alt="Layered vintage windbreaker jacket over plain minimal tee" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8c1XJoJmRQ4Tlk2D_xzsSfdpNYrgUp-1hMInTg-lwbX7ijoHKWdVuOT2qYusWV0ELQoENLRHxGHRUYdk0zY8XIWq5a_98yULDhJkLg-gh1W5JIK4BWCq1U3OHNOMCI7MMbilJCkWGxGJDyKZRRtBcnad8C3v-f9vFj9QUYoh6aRBhv9SRmwiUwuYLQ77CVqULZUMg2ORI4p53khvSWIQXmJk9dyAecanC66FW5waNN0lAg0tW3TTd"/>
+                <div class="look-tag text-text-main">LOOK 04</div>
+                <div class="price-tag">Total ₹999</div>
+              </div>
+              <div class="p-space-lg flex flex-col flex-1 justify-between gap-space-md">
+                <div class="flex flex-col gap-space-xs">
+                  <span class="font-label-uppercase text-label-uppercase text-accent uppercase font-semibold">Layered Utility</span>
+                  <h3 class="font-title-editorial text-title-editorial text-text-main font-semibold">Jacket + Heavyweight Tee</h3>
+                  <p class="font-body-sm text-body-sm text-text-secondary">Clean transitional outfit for everyday wear.</p>
+                </div>
+                <button class="w-full py-space-sm bg-surface-sand text-text-main hover:bg-primary hover:text-[#F7F1E7] border border-border-soft transition-colors font-label-uppercase text-label-uppercase uppercase tracking-wider flex items-center justify-center gap-space-xs cursor-pointer" type="button">
+                  <span>SHOP THE LOOK</span>
+                  <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. PREMIUM THRIFT MANIFESTO ('WHY PAY RETAIL?') -->
+      <section id="manifesto-section" class="w-full px-gutter-mobile md:px-gutter-desktop py-space-3xl max-w-container-max mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 overflow-hidden bg-card-bg border border-border-soft shadow-md">
+          <!-- Media Col -->
+          <div class="lg:col-span-7 relative min-h-[420px] lg:min-h-[580px] bg-surface-sand overflow-hidden">
+            <img alt="Curated thrift clothing racks in Bettiah atelier" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2ZR-dCW-WzkDM5Yimsyx77QX4ukZmYuKoeqQEQRUOwFldQeHEHcMEBukVY2gG_X2SzImomTTUH84w39LQ2YjqfxLrXFWCF49D2IAwa_v1V440Nx7VR96KF1bjXQ-KzbhbnFeQc8B9eEQFlrsyFXGr6VkhF7pCSExXzlXFzqFQFDsW3pvKjS5fcgbJI7eBnvMd56Ps_2Mr2oQzCGqDj1QO8kiw8Eos5n0qxXFmiNmOIL3oUO-Esf2D"/>
+            <div class="absolute inset-0 bg-secondary-dark/10"></div>
+            <div class="absolute top-space-lg left-space-lg bg-[#FFFDF8]/95 border border-border-soft backdrop-blur-sm px-space-md py-space-xs font-label-uppercase text-label-uppercase text-primary font-bold">
+              THE BETTIAH ATELIER
+            </div>
+          </div>
+          <!-- Content Col -->
+          <div class="lg:col-span-5 p-space-xl md:p-space-3xl flex flex-col justify-center bg-card-bg">
+            <span class="font-label-uppercase text-label-uppercase text-accent uppercase tracking-[0.2em] mb-space-2xs font-semibold">
+              CONSCIOUS ARCHIVE MANIFESTO
+            </span>
+            <h2 class="font-headline-lg md:font-headline-xl text-headline-lg md:text-headline-xl text-text-main mb-space-md leading-tight">
+              WHY PAY RETAIL?
+            </h2>
+            <p class="font-body-md text-body-md text-text-secondary leading-relaxed mb-space-lg">
+              Discover unique thrift fashion and curated branded pieces at accessible prices. By rescuing high-grade cottons, enduring selvedge denims, and archival knitwear, we eliminate the ecological footprint of fast fashion while giving you an unmatched personal wardrobe.
+            </p>
+            <!-- Metric micro-callouts -->
+            <div class="grid grid-cols-3 gap-space-md py-space-md mb-space-xl bg-surface-sand/70 border border-border-soft p-space-sm">
+              <div class="flex flex-col">
+                <span class="font-headline-sm text-headline-sm text-text-main font-semibold">100%</span>
+                <span class="font-caption text-caption text-text-secondary">Sanitized & Checked</span>
+              </div>
+              <div class="flex flex-col">
+                <span class="font-headline-sm text-headline-sm text-text-main font-semibold">80%</span>
+                <span class="font-caption text-caption text-text-secondary">Below Retail Value</span>
+              </div>
+              <div class="flex flex-col">
+                <span class="font-headline-sm text-headline-sm text-text-main font-semibold">1-of-1</span>
+                <span class="font-caption text-caption text-text-secondary">Individual Pieces</span>
+              </div>
+            </div>
+            <a class="btn-primary w-fit text-decoration-none" href="#arrivals-section">
+              EXPLORE THRIFT
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. WHOLESALE PROMOTIONAL BANNER -->
+      <section id="wholesale-section" class="w-full px-gutter-mobile md:px-gutter-desktop py-space-3xl max-w-container-max mx-auto">
+        <div class="relative bg-secondary-dark text-[#F7F1E7] border border-border-soft/40 overflow-hidden p-space-xl md:p-space-4xl shadow-xl">
+          <div class="absolute -right-16 -bottom-16 font-display-hero text-[180px] text-white/[0.03] select-none pointer-events-none leading-none font-bold">
+            NAWAB
+          </div>
+          <div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-space-2xl items-center">
+            <!-- Left: Wholesale Value Proposition -->
+            <div class="lg:col-span-7 flex flex-col gap-space-md">
+              <div class="flex items-center gap-space-xs">
+                <span class="w-2 h-2 rounded-full bg-accent"></span>
+                <span class="font-label-uppercase text-label-uppercase text-accent tracking-widest uppercase font-semibold">
+                  B2B RESELLER INCUBATOR
+                </span>
+              </div>
+              <h2 class="font-headline-lg md:font-headline-xl text-headline-lg md:text-headline-xl text-[#F7F1E7] font-normal">
+                START YOUR OWN <span class="italic text-accent font-light">THRIFT BUSINESS</span>
+              </h2>
+              <p class="font-body-md text-body-md text-[#F7F1E7]/80 max-w-lg leading-relaxed">
+                Bulk thrift collections curated specifically for college entrepreneurs, online sellers, and boutique store owners across India. Direct supply chain sourced and pre-sorted in Bettiah, Bihar.
+              </p>
+              <div class="flex flex-wrap items-center gap-space-md pt-space-xs">
+                <a class="btn-primary text-decoration-none" href="#arrivals-section">
+                  VIEW WHOLESALE
+                </a>
+                <a class="h-12 px-space-xl bg-[#F7F1E7]/10 text-[#F7F1E7] hover:bg-[#F7F1E7]/20 border border-[#F7F1E7]/30 transition-colors flex items-center justify-center font-label-uppercase text-label-uppercase uppercase tracking-widest text-decoration-none" href="https://wa.me/910000000000" target="_blank" rel="noopener noreferrer">
+                  Direct B2B WhatsApp
+                </a>
+              </div>
+            </div>
+            <!-- Right: Featured Bundle Card -->
+            <div class="lg:col-span-5 bg-card-bg text-text-main border border-border-soft p-space-xl shadow-md flex flex-col gap-space-md">
+              <div class="flex items-center justify-between">
+                <span class="font-label-uppercase text-label-uppercase px-space-xs py-space-3xs bg-surface-sand text-secondary-dark border border-border-soft uppercase font-semibold">
+                  POPULAR STARTER BUNDLE
+                </span>
+                <span class="font-caption text-caption text-text-secondary">Grade A+ Assortment</span>
+              </div>
+              <div class="flex flex-col gap-space-2xs">
+                <h4 class="font-headline-sm text-headline-sm text-text-main font-semibold">15 Piece Reseller Combo</h4>
+                <p class="font-body-sm text-body-sm text-text-secondary">
+                  Includes: 5 Handpicked Denim Jeans • 5 Premium Oxford/Casual Shirts • 5 Vintage Graphic T-Shirts
+                </p>
+              </div>
+              <div class="p-space-sm bg-surface-sand/60 border border-border-soft flex items-center justify-between">
+                <div class="flex flex-col">
+                  <span class="font-caption text-caption text-text-secondary line-through">Retail Val. ₹7,999</span>
+                  <span class="font-label-price text-label-price text-primary text-[20px] font-bold">₹3,599 <span class="font-caption text-caption text-text-secondary font-normal">/ bundle</span></span>
+                </div>
+                <span class="font-caption text-caption text-text-main font-semibold bg-card-bg border border-border-soft px-space-xs py-space-2xs">
+                  ₹239 / piece
+                </span>
+              </div>
+              <button class="w-full py-space-sm bg-primary text-[#F7F1E7] hover:bg-primary-hover border border-accent/30 transition-colors text-center font-label-uppercase text-label-uppercase uppercase tracking-wider cursor-pointer add-to-bag-btn" type="button" data-title="15 Piece Reseller Wholesale Bundle" data-price="3599" data-code="B2B Bundle #01">
+                Order Wholesale Lot
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. INSTAGRAM EDITORIAL FEED -->
+      <section class="w-full px-gutter-mobile md:px-gutter-desktop py-space-4xl max-w-container-max mx-auto">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-space-2xl gap-space-sm">
+          <div class="flex flex-col gap-space-3xs">
+            <span class="font-label-uppercase text-label-uppercase text-accent tracking-widest uppercase font-semibold">COMMUNITY & ARCHIVE DIARIES</span>
+            <h2 class="font-headline-lg text-headline-lg text-text-main">FOLLOW THE THRIFT JOURNEY</h2>
+            <a class="font-title-editorial text-title-editorial text-text-secondary hover:text-primary transition-colors text-decoration-none" href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              @thriftstore_by_nawab
+            </a>
+          </div>
+          <a class="h-11 px-space-xl bg-surface-sand text-text-main border border-border-soft hover:bg-hover-bg transition-colors flex items-center justify-center font-label-uppercase text-label-uppercase uppercase tracking-widest text-decoration-none" href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            FOLLOW ON INSTAGRAM
+          </a>
+        </div>
+        <!-- 6 Image Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-space-md">
+          <a class="group relative aspect-square overflow-hidden bg-surface-sand border border-border-soft" href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Customer styling vintage baggies" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBH6C_k3gduD24-sB8BIY0v9OMABiLBgEnIkZhlBp2iFTqzNXLQwtey4HeJzpGuX7sSlWRxcbORz4qH4nKVMXGRBi4NnT0PSJThBMnl-dNkyvBhr7aHCCyz1igB-Hj7qyoF6Nbnw2EzBFGZI7ilVfFE6-SpAWy0_N3y-NVO0uLQvznoDt4m4VFdpDyMupFWsfnpbGpWOChzT11rnMkxX-hUFIDWmTbXUjRR3x7UuqmqrWbyA0w4bScm"/>
+            <div class="absolute inset-0 bg-primary/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-[#F7F1E7]">
+              <span class="material-symbols-outlined text-[24px]">favorite</span>
+            </div>
+          </a>
+          <a class="group relative aspect-square overflow-hidden bg-surface-sand border border-border-soft" href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Archival tag detail" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrmatwCH4H7p1b1mqcfUuctFcNFA6m6FJFZwxGuV88F1VybbugQfFhUN5H4TUdq8m7W4jNl4MuuqXt21IPLxY25riJ6n-aYudfVXcTS6prUrri_xGx8_mgJxPU15LHSTCwalqyLnjS8RnGK-DEzoGXw8bjA_mtAtlHAQZ5Npf42T44LyJAylSO16WOI_fNtsa2sPBjb42q8YhagjzrERHWSCypXzuedc_X1P7wvv99dJqlIlp9hydJ"/>
+            <div class="absolute inset-0 bg-primary/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-[#F7F1E7]">
+              <span class="material-symbols-outlined text-[24px]">favorite</span>
+            </div>
+          </a>
+          <a class="group relative aspect-square overflow-hidden bg-surface-sand border border-border-soft" href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Atelier steam iron process" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyZS1FEllXTwVqoHBNklG3gbBfG8mUbcT3v8Xw_LhWh7m46AkJXoCWqDNiImIjtU-w5FNBndAh6rXsVdMmVrQEvDYzJohbUVBd6-3LEsK2XX8XybwSYlXWxcxY5OeXJKc98WEyQLiP0cLm2gLBLyznWSOWx0GBwkaH1rO8E_r4xvrLg3A2gZgoO6smSrmFuapOIzxuzJoqcWReAXJsCLzjub8Zj_B5rOJ_MAGTpBwFUsNXUWIRkw5O"/>
+            <div class="absolute inset-0 bg-primary/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-[#F7F1E7]">
+              <span class="material-symbols-outlined text-[24px]">favorite</span>
+            </div>
+          </a>
+          <a class="group relative aspect-square overflow-hidden bg-surface-sand border border-border-soft" href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Editorial duo photoshoot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYCoOeSI9a1ITBFiEppfvf8onQSZemtyjCzrntCU1JxqSQEQE5HKeVSKzaiICkzMzoIMZGWvktwM8uDYBuxKuqClp5-6DzZ9THWIxzCrd-XSveoqOpqAKH1PJuBJDdX0MyypA5G-Vk2ZdMftkDCHAEO-YZL_AqlywMx_qJdRtYQqGVFcLbYI7qX7q_S3as_0v3qwFofpTBFFEinwfW73socaJqhfYJ-FUMqlBzNf6OJyYWTqEG0CW5"/>
+            <div class="absolute inset-0 bg-primary/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-[#F7F1E7]">
+              <span class="material-symbols-outlined text-[24px]">favorite</span>
+            </div>
+          </a>
+          <a class="group relative aspect-square overflow-hidden bg-surface-sand border border-border-soft" href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Retro sneakers lineup" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1mLN6VG1zjPtztLs_PQhSC0_mU4LtmwqXMWIxzSrcvPzsAivZr_KyofHJ5-g9bZdPDfNEGEjl7b4IRvi9EnMVGsEYRlR4M3cL5RQISIYeyRKQdOWB4be2ensuJH-3HVGeITnutcqFia_FiU07hW_Tl5plwmRSykrGOjbvEdz_skW6gKO--mUkHtPVypz3uBFkaY1v7AOcXxnf-QxTd0LcsvJAXb399Y-27ulHEEU0YM71DeKea9lG"/>
+            <div class="absolute inset-0 bg-primary/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-[#F7F1E7]">
+              <span class="material-symbols-outlined text-[24px]">favorite</span>
+            </div>
+          </a>
+          <a class="group relative aspect-square overflow-hidden bg-surface-sand border border-border-soft" href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Wax seal parcel packaging" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDPFcMXBp0g7Q_VWVwNS0JmUakgnGE0r4l3A4SfBYDp9P-OQCbp67vOXEcQ_OieNnxHRwYNZ0XWONQkoNDx6jKdUp0v1ZZf6ji4A7uvuO4wph0BN8btavwc3wnAo-1VaYVQpv83oP0r6pXRj99_1xgHct5Kpap7Zx_ivSaDwDUHS679grkYGrmvhgNXblQlYNHHW5WlNZ3225V_XDgcTBOT1HwTAW4NXqmztF7qiEy9LOIkzaIEw63"/>
+            <div class="absolute inset-0 bg-primary/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-[#F7F1E7]">
+              <span class="material-symbols-outlined text-[24px]">favorite</span>
+            </div>
+          </a>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- SEARCH MODAL OVERLAY -->
+  <aside id="search-modal" class="modal-overlay">
+    <div class="modal-box">
+      <div class="flex items-center justify-between pb-space-md">
+        <span class="font-label-uppercase text-label-uppercase text-accent tracking-wider uppercase font-semibold">Search Archival Drops</span>
+        <button id="close-search-btn" class="text-text-secondary hover:text-text-main cursor-pointer" type="button">
+          <span class="material-symbols-outlined text-[20px]">close</span>
+        </button>
+      </div>
+      <div class="flex items-center gap-space-sm py-space-sm border-b border-border-soft">
+        <span class="material-symbols-outlined text-text-secondary text-[24px]">search</span>
+        <input id="search-input" class="w-full bg-transparent font-body-md text-body-md text-text-main placeholder:text-text-secondary/60 focus:outline-none" placeholder="Search vintage jackets, denim, heritage blazers..." type="text"/>
+      </div>
+      <div class="pt-space-md flex items-center gap-space-xs flex-wrap">
+        <span class="font-caption text-caption text-text-secondary">Trending:</span>
+        <button class="font-label-uppercase text-label-uppercase px-space-xs py-space-3xs bg-surface-sand text-text-main border border-border-soft cursor-pointer hover:bg-hover-bg">Leather Jackets</button>
+        <button class="font-label-uppercase text-label-uppercase px-space-xs py-space-3xs bg-surface-sand text-text-main border border-border-soft cursor-pointer hover:bg-hover-bg">Oversized Sweaters</button>
+        <button class="font-label-uppercase text-label-uppercase px-space-xs py-space-3xs bg-surface-sand text-text-main border border-border-soft cursor-pointer hover:bg-hover-bg">Cargo Pants</button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- CART DRAWER SLIDE-OUT -->
+  <aside id="cart-drawer" class="drawer-overlay">
+    <div class="drawer-content">
+      <div class="flex items-center justify-between pb-space-lg border-b border-border-soft">
+        <div class="flex items-center gap-space-xs">
+          <span class="font-title-editorial text-title-editorial text-text-main">Selected Archive</span>
+          <span id="cart-drawer-count" class="font-caption text-caption text-accent font-semibold">(1 Item)</span>
+        </div>
+        <button id="close-cart-btn" class="text-text-secondary hover:text-text-main cursor-pointer" type="button">
+          <span class="material-symbols-outlined text-[20px]">close</span>
+        </button>
+      </div>
+      <div id="cart-items-list" class="flex-1 overflow-y-auto py-space-md flex flex-col gap-space-lg">
+        <!-- Default Cart Item -->
+        <div class="flex gap-space-md items-center border-b border-border-soft/40 pb-space-md" data-cart-id="item-default">
+          <div class="w-20 h-24 bg-surface-sand border border-border-soft flex items-center justify-center overflow-hidden">
+            <span class="material-symbols-outlined text-accent text-[28px]">checkroom</span>
+          </div>
+          <div class="flex-1">
+            <p class="font-label-uppercase text-label-uppercase text-accent uppercase font-medium">Bettiah Archive #402</p>
+            <h4 class="font-title-editorial text-title-editorial text-text-main">Vintage Italian Wool Trench</h4>
+            <p class="font-label-price text-label-price text-text-main pt-space-3xs font-semibold">₹4,499</p>
+          </div>
+          <button class="remove-cart-item text-text-secondary hover:text-primary transition-colors cursor-pointer" type="button">
+            <span class="material-symbols-outlined text-[20px]">delete</span>
+          </button>
+        </div>
+      </div>
+      <div class="pt-space-lg flex flex-col gap-space-md border-t border-border-soft">
+        <div class="flex justify-between items-center">
+          <span class="font-label-uppercase text-label-uppercase text-text-secondary uppercase">Subtotal</span>
+          <span id="cart-subtotal" class="font-label-price text-label-price text-text-main font-bold">₹4,499</span>
+        </div>
+        <button id="checkout-btn" class="w-full h-12 bg-primary text-[#F7F1E7] border border-accent/40 flex items-center justify-center font-label-uppercase text-label-uppercase uppercase tracking-widest hover:bg-primary-hover transition-colors cursor-pointer" type="button">
+          Proceed to Checkout
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <!-- FOOTER -->
+  <footer id="footer-section" class="site-footer">
+    <div class="max-w-container-max mx-auto px-gutter-mobile md:px-gutter-desktop">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl pb-space-3xl border-b border-[#F7F1E7]/10">
+        <div class="lg:col-span-2 flex flex-col gap-space-md">
+          <span class="font-title-editorial text-title-editorial uppercase text-[#F7F1E7] tracking-wider font-semibold">Thrift Store By Nawab</span>
+          <p class="font-body-md text-body-md text-[#F7F1E7]/75 max-w-sm">
+            Curated archival apparel and premium pre-loved couture rooted in Bettiah, Bihar. Cultivating conscious slow fashion with verified craftsmanship and timeless provenance.
+          </p>
+          <div class="pt-space-xs flex flex-col gap-space-3xs">
+            <span class="font-label-uppercase text-label-uppercase text-accent uppercase font-semibold">Atelier & Flagship</span>
+            <span class="font-body-sm text-body-sm text-[#F7F1E7]/75">Bettiah, West Champaran, Bihar, India</span>
+          </div>
+        </div>
+        <div class="flex flex-col gap-space-sm">
+          <span class="font-label-uppercase text-label-uppercase text-accent uppercase font-semibold">Shop Curations</span>
+          <nav class="flex flex-col gap-space-xs">
+            <a class="font-body-sm text-body-sm" href="#arrivals-section">Archival Drops</a>
+            <a class="font-body-sm text-body-sm" href="#category-section">Vintage Blazers & Trench</a>
+            <a class="font-body-sm text-body-sm" href="#category-section">Authentic Denim</a>
+            <a class="font-body-sm text-body-sm" href="#category-section">Streetwear Essentials</a>
+          </nav>
+        </div>
+        <div class="flex flex-col gap-space-sm">
+          <span class="font-label-uppercase text-label-uppercase text-accent uppercase font-semibold">Wholesale & Trade</span>
+          <nav class="flex flex-col gap-space-xs">
+            <a class="font-body-sm text-body-sm" href="#wholesale-section">B2B Vintage Bundles</a>
+            <a class="font-body-sm text-body-sm" href="#wholesale-section">Reseller Supply Chain</a>
+            <a class="font-body-sm text-body-sm" href="#wholesale-section">Bulk Grading Inquiries</a>
+          </nav>
+        </div>
+        <div class="flex flex-col gap-space-sm">
+          <span class="font-label-uppercase text-label-uppercase text-accent uppercase font-semibold">Connect & Social</span>
+          <nav class="flex flex-col gap-space-xs">
+            <a class="font-body-sm text-body-sm" href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram: @thriftstore_by_nawab</a>
+            <a class="font-body-sm text-body-sm" href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook: Hiba Nawab</a>
+            <a class="font-body-sm text-body-sm" href="https://wa.me/910000000000" target="_blank" rel="noopener noreferrer">Direct Concierge</a>
+            <a class="font-body-sm text-body-sm" href="#manifesto-section">Our Provenance</a>
+          </nav>
+        </div>
+      </div>
+      <div class="pt-space-xl flex flex-col md:flex-row items-center justify-between gap-space-md text-center md:text-left">
+        <p class="font-caption text-caption text-[#F7F1E7]/60">© 2026 Thrift Store by Nawab. All rights reserved. Bettiah, Bihar, India.</p>
+        <div class="flex items-center gap-space-lg">
+          <a class="font-caption text-caption text-[#F7F1E7]/60 hover:text-accent" href="#">Terms of Provenance</a>
+          <a class="font-caption text-caption text-[#F7F1E7]/60 hover:text-accent" href="#">Privacy Policy</a>
+          <a class="font-caption text-caption text-[#F7F1E7]/60 hover:text-accent" href="#">Shipping & Authenticity</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
