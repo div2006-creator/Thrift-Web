@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Bettiah Atelier | Thrift Store by Nawab</title>
+  <meta name="description" content="Learn about Thrift Store by Nawab in Bettiah, West Champaran, Bihar. Our 3-step steam sanitation process, sustainability mission, and provenance."/>
+  
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "primary": "#641C2D",
+            "primary-hover": "#4a1421",
+            "secondary-dark": "#3A241F",
+            "accent": "#B08A4A",
+            "background": "#F7F1E7",
+            "surface-sand": "#EFE4D2",
+            "card-bg": "#FFFDF8",
+            "border-soft": "#D8C8B5",
+            "hover-bg": "#E9DCC9",
+            "text-main": "#24201E",
+            "text-secondary": "#77706A"
+          },
+          "borderRadius": { "DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px" },
+          "spacing": {
+            "space-3xs": "0.125rem", "space-2xs": "0.25rem", "space-xs": "0.5rem", "space-sm": "0.75rem",
+            "space-md": "1rem", "space-lg": "1.5rem", "space-xl": "2rem", "space-2xl": "3rem",
+            "space-3xl": "4rem", "space-4xl": "6rem", "space-5xl": "8rem", "gutter-mobile": "1rem",
+            "gutter-desktop": "2rem", "container-max": "88rem"
+          },
+          "fontFamily": {
+            "display-hero": [ "Playfair Display", "Georgia", "serif" ],
+            "headline-xl": [ "Playfair Display", "Georgia", "serif" ],
+            "headline-lg": [ "Playfair Display", "Georgia", "serif" ],
+            "title-editorial": [ "Playfair Display", "Georgia", "serif" ],
+            "body-lg": [ "Plus Jakarta Sans", "sans-serif" ],
+            "body-md": [ "Plus Jakarta Sans", "sans-serif" ],
+            "body-sm": [ "Plus Jakarta Sans", "sans-serif" ],
+            "label-uppercase": [ "Plus Jakarta Sans", "sans-serif" ]
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-background font-body-md text-text-main antialiased selection:bg-surface-sand selection:text-text-main">
+
+  <!-- STICKY HEADER -->
+  <header class="fixed top-0 left-0 w-full z-40 bg-[#F7F1E7]/95 backdrop-blur-md border-b border-border-soft/60 shadow-[0_1px_8px_rgba(0,0,0,0.03)]">
+    <div class="bg-primary text-[#F7F1E7] py-space-2xs px-gutter-mobile md:px-gutter-desktop text-center">
+      <p class="font-label-uppercase text-label-uppercase tracking-widest uppercase text-accent font-semibold">
+        BETTIAN ATELIER • CRAFTING SUSTAINABLE FASHION PROVENANCE
+      </p>
+    </div>
+    <div class="h-20 max-w-container-max mx-auto px-gutter-mobile md:px-gutter-desktop flex items-center justify-between">
+      <div class="flex items-center gap-space-md">
+        <a class="flex items-center gap-space-sm text-decoration-none" href="index.html">
+          <img alt="Thrift Store By Nawab Brand Logo" class="h-10 w-auto object-contain rounded border border-accent/40 shadow-sm" src="images/nawab_logo.png"/>
+          <div class="flex flex-col">
+            <span class="font-title-editorial text-title-editorial tracking-wider text-text-main font-semibold uppercase">Thrift Store By Nawab</span>
+            <span class="font-caption text-caption text-text-secondary tracking-widest uppercase hidden sm:inline">Bettiah • Archival Recommerce</span>
+          </div>
+        </a>
+      </div>
+      <nav class="hidden lg:flex items-center gap-space-xl" id="desktop-nav">
+        <a class="nav-link font-label-uppercase text-label-uppercase text-text-secondary hover:text-primary transition-colors py-space-xs uppercase" href="index.html">Home</a>
+        <a class="nav-link font-label-uppercase text-label-uppercase text-text-secondary hover:text-primary transition-colors py-space-xs uppercase" href="shop.html">Shop</a>
+        <a class="nav-link font-label-uppercase text-label-uppercase text-text-secondary hover:text-primary transition-colors py-space-xs uppercase" href="collections.html">Collections</a>
+        <a class="nav-link font-label-uppercase text-label-uppercase text-text-secondary hover:text-primary transition-colors py-space-xs uppercase" href="wholesale.html">Wholesale</a>
+        <a aria-current="page" class="nav-link active transition-colors py-space-xs font-label-uppercase text-label-uppercase uppercase text-primary font-bold border-b-2 border-primary" href="about.html">About Us</a>
+        <a class="nav-link font-label-uppercase text-label-uppercase text-text-secondary hover:text-primary transition-colors py-space-xs uppercase" href="contact.html">Contact</a>
+      </nav>
+      <div class="flex items-center gap-space-sm md:gap-space-md">
+        <button id="open-search-btn" aria-label="Search catalog" class="p-space-xs text-text-secondary hover:text-text-main transition-colors cursor-pointer" type="button">
+          <span class="material-symbols-outlined text-[22px]">search</span>
+        </button>
+        <button id="open-cart-btn" aria-label="Open cart" class="relative p-space-xs text-text-secondary hover:text-text-main transition-colors cursor-pointer" type="button">
+          <span class="material-symbols-outlined text-[22px]">shopping_bag</span>
+          <span id="cart-badge" class="absolute top-1 right-1 w-4 h-4 rounded-full bg-primary text-[#F7F1E7] font-caption text-[10px] leading-none flex items-center justify-center font-bold">1</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN ABOUT CONTENT -->
+  <main class="w-full pt-28 bg-background main-content pb-space-5xl">
+    <div class="max-w-container-max mx-auto px-gutter-mobile md:px-gutter-desktop">
+      
+      <!-- HERO -->
+      <div class="border-b border-border-soft pb-space-2xl mb-space-4xl text-center max-w-3xl mx-auto">
+        <span class="font-label-uppercase text-accent font-semibold tracking-[0.2em]">BETTIAH, WEST CHAMPARAN, BIHAR</span>
+        <h1 class="font-headline-xl text-headline-xl md:font-display-hero text-text-main pt-2">THE STORY OF NAWAB</h1>
+        <p class="font-body-lg text-text-secondary pt-3 leading-relaxed">
+          Founded with a passion for archival vintage, high-grade selvedge denim, and sustainable fashion. We believe great style shouldn't cost the earth or demand high retail prices.
+        </p>
+      </div>
+
+      <!-- IMAGE & MANIFESTO GRID -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-3xl items-center mb-space-5xl">
+        <div class="lg:col-span-6 relative aspect-[4/3] bg-surface-sand overflow-hidden border border-border-soft shadow-md">
+          <img alt="Bettiah Thrift Atelier" class="w-full h-full object-cover" src="images/atelier_bessiah.png"/>
+        </div>
+        <div class="lg:col-span-6 flex flex-col gap-space-md">
+          <span class="font-label-uppercase text-accent font-semibold">OUR MANIFESTO</span>
+          <h2 class="font-headline-lg text-text-main">WHY PAY RETAIL WHEN ARCHIVAL EXISTS?</h2>
+          <p class="font-body-md text-text-secondary leading-relaxed">
+            Fast fashion produces millions of tons of synthetic waste annually while diluting personal expression. At <strong class="text-text-main">Thrift Store by Nawab</strong>, we hunt through thousands of garments to find true 1-of-1 archival gems from the 90s and Y2K eras.
+          </p>
+          <p class="font-body-md text-text-secondary leading-relaxed">
+            Every garment shipped from our Bettiah studio is individually inspected, steam-sanitized, hand-pressed, and packaged with care to bring you luxury standards at accessible prices.
+          </p>
+        </div>
+      </div>
+
+      <!-- 3-STEP HYGIENE GUARANTEE -->
+      <div class="bg-surface-sand border border-border-soft p-space-xl md:p-space-4xl mb-space-4xl">
+        <div class="text-center max-w-2xl mx-auto mb-space-3xl flex flex-col gap-2">
+          <span class="font-label-uppercase text-accent font-semibold">THE NAWAB STANDARD</span>
+          <h2 class="font-headline-lg text-text-main">OUR 3-STEP SANITATION PROCESS</h2>
+          <p class="font-body-md text-text-secondary">We ensure every piece arrives fresh, clean, and ready to wear straight out of the box.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-space-xl">
+          
+          <div class="bg-card-bg border border-border-soft p-space-lg flex flex-col gap-3">
+            <span class="w-10 h-10 rounded-full bg-primary text-[#F7F1E7] font-bold flex items-center justify-center font-headline-sm">1</span>
+            <h3 class="font-headline-sm text-text-main">120°C Steam Sanitation</h3>
+            <p class="font-body-sm text-text-secondary">
+              High-pressure medical-grade steaming to eliminate all bacteria, odor, and micro-particles from natural cottons and wools.
+            </p>
+          </div>
+
+          <div class="bg-card-bg border border-border-soft p-space-lg flex flex-col gap-3">
+            <span class="w-10 h-10 rounded-full bg-primary text-[#F7F1E7] font-bold flex items-center justify-center font-headline-sm">2</span>
+            <h3 class="font-headline-sm text-text-main">Fabric Integrity Inspection</h3>
+            <p class="font-body-sm text-text-secondary">
+              Every seam, zipper, button, and collar is hand-checked by our Bettiah tailors. Any minor flaw is transparently documented in condition tags.
+            </p>
+          </div>
+
+          <div class="bg-card-bg border border-border-soft p-space-lg flex flex-col gap-3">
+            <span class="w-10 h-10 rounded-full bg-primary text-[#F7F1E7] font-bold flex items-center justify-center font-headline-sm">3</span>
+            <h3 class="font-headline-sm text-text-main">Eco Press & Sealed Packaging</h3>
+            <p class="font-body-sm text-text-secondary">
+              Crisp ironing followed by anti-moist sealed polybag packaging so your vintage pieces stay pristine during transit across India.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- CART DRAWER -->
+  <div id="cart-drawer" class="drawer-overlay">
+    <div class="drawer-content">
+      <div class="flex items-center justify-between border-b border-border-soft pb-space-md mb-space-md">
+        <span class="font-title-editorial text-text-main font-semibold">YOUR ARCHIVE BAG</span>
+        <button id="close-cart-btn" class="text-text-secondary p-1 cursor-pointer" type="button">
+          <span class="material-symbols-outlined text-[20px]">close</span>
+        </button>
+      </div>
+      <div id="cart-items-list" class="flex-1 overflow-y-auto"></div>
+      <a href="cart.html" class="btn-primary text-center mt-4">PROCEED TO CHECKOUT</a>
+    </div>
+  </div>
+
+  <div id="toast-container" class="toast-container"></div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="max-w-container-max mx-auto px-gutter-mobile md:px-gutter-desktop text-center text-xs text-[#F7F1E7]/60">
+      <p>© 2026 Thrift Store by Nawab. Bettiah, West Champaran, Bihar, India.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

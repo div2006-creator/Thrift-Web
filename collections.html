@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Curated Collections & Limited Drops | Thrift Store by Nawab</title>
+  <meta name="description" content="Explore exclusive archival drops: 90s Graphic Vault, Selvedge Denim Archive, Italian Wool & Reseller Mystery Bales."/>
+  
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "primary": "#641C2D",
+            "primary-hover": "#4a1421",
+            "secondary-dark": "#3A241F",
+            "accent": "#B08A4A",
+            "background": "#F7F1E7",
+            "surface-sand": "#EFE4D2",
+            "card-bg": "#FFFDF8",
+            "border-soft": "#D8C8B5",
+            "hover-bg": "#E9DCC9",
+            "text-main": "#24201E",
+            "text-secondary": "#77706A"
+          },
+          "borderRadius": { "DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px" },
+          "spacing": {
+            "space-3xs": "0.125rem", "space-2xs": "0.25rem", "space-xs": "0.5rem", "space-sm": "0.75rem",
+            "space-md": "1rem", "space-lg": "1.5rem", "space-xl": "2rem", "space-2xl": "3rem",
+            "space-3xl": "4rem", "space-4xl": "6rem", "space-5xl": "8rem", "gutter-mobile": "1rem",
+            "gutter-desktop": "2rem", "container-max": "88rem"
+          },
+          "fontFamily": {
+            "display-hero": [ "Playfair Display", "Georgia", "serif" ],
+            "headline-xl": [ "Playfair Display", "Georgia", "serif" ],
+            "headline-lg": [ "Playfair Display", "Georgia", "serif" ],
+            "title-editorial": [ "Playfair Display", "Georgia", "serif" ],
+            "body-lg": [ "Plus Jakarta Sans", "sans-serif" ],
+            "body-md": [ "Plus Jakarta Sans", "sans-serif" ],
+            "body-sm": [ "Plus Jakarta Sans", "sans-serif" ],
+            "label-uppercase": [ "Plus Jakarta Sans", "sans-serif" ]
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-background font-body-md text-text-main antialiased selection:bg-surface-sand selection:text-text-main">
+
+  <!-- STICKY HEADER -->
+  <header class="fixed top-0 left-0 w-full z-40 bg-[#F7F1E7]/95 backdrop-blur-md border-b border-border-soft/60 shadow-[0_1px_8px_rgba(0,0,0,0.03)]">
+    <!-- Announcement Bar -->
+    <div class="bg-primary text-[#F7F1E7] py-space-2xs px-gutter-mobile md:px-gutter-desktop text-center">
+      <p class="font-label-uppercase text-label-uppercase tracking-widest uppercase text-accent font-semibold">
+        CURATED DROP No. 18 LIVE NOW • BETTIAH, BIHAR
+      </p>
+    </div>
+    <!-- Main Header Bar -->
+    <div class="h-20 max-w-container-max mx-auto px-gutter-mobile md:px-gutter-desktop flex items-center justify-between">
+      <div class="flex items-center gap-space-md">
+        <a class="flex items-center gap-space-sm text-decoration-none" href="index.html">
+          <img alt="Thrift Store By Nawab Brand Logo" class="h-10 w-auto object-contain rounded border border-accent/40 shadow-sm" src="images/nawab_logo.png"/>
+          <div class="flex flex-col">
+            <span class="font-title-editorial text-title-editorial tracking-wider text-text-main font-semibold uppercase">Thrift Store By Nawab</span>
+            <span class="font-caption text-caption text-text-secondary tracking-widest uppercase hidden sm:inline">Bettiah • Archival Recommerce</span>
+          </div>
+        </a>
+      </div>
+      <!-- Nav Links -->
+      <nav class="hidden lg:flex items-center gap-space-xl" id="desktop-nav">
+        <a class="nav-link font-label-uppercase text-label-uppercase text-text-secondary hover:text-primary transition-colors py-space-xs uppercase" href="index.html">Home</a>
+        <a class="nav-link font-label-uppercase text-label-uppercase text-text-secondary hover:text-primary transition-colors py-space-xs uppercase" href="shop.html">Shop</a>
+        <a aria-current="page" class="nav-link active transition-colors py-space-xs font-label-uppercase text-label-uppercase uppercase text-primary font-bold border-b-2 border-primary" href="collections.html">Collections</a>
+        <a class="nav-link font-label-uppercase text-label-uppercase text-text-secondary hover:text-primary transition-colors py-space-xs uppercase" href="wholesale.html">Wholesale</a>
+        <a class="nav-link font-label-uppercase text-label-uppercase text-text-secondary hover:text-primary transition-colors py-space-xs uppercase" href="about.html">About Us</a>
+        <a class="nav-link font-label-uppercase text-label-uppercase text-text-secondary hover:text-primary transition-colors py-space-xs uppercase" href="contact.html">Contact</a>
+      </nav>
+      <!-- Action Icons -->
+      <div class="flex items-center gap-space-sm md:gap-space-md">
+        <button id="open-search-btn" aria-label="Search catalog" class="p-space-xs text-text-secondary hover:text-text-main transition-colors cursor-pointer" type="button">
+          <span class="material-symbols-outlined text-[22px]">search</span>
+        </button>
+        <button id="open-wishlist-btn" aria-label="Wishlist" class="relative p-space-xs text-text-secondary hover:text-text-main transition-colors cursor-pointer" type="button">
+          <span class="material-symbols-outlined text-[22px]">favorite</span>
+          <span id="wishlist-badge" class="absolute top-1 right-1 w-4 h-4 rounded-full bg-primary text-[#F7F1E7] font-caption text-[10px] leading-none flex items-center justify-center font-bold">2</span>
+        </button>
+        <button id="open-cart-btn" aria-label="Open cart" class="relative p-space-xs text-text-secondary hover:text-text-main transition-colors cursor-pointer" type="button">
+          <span class="material-symbols-outlined text-[22px]">shopping_bag</span>
+          <span id="cart-badge" class="absolute top-1 right-1 w-4 h-4 rounded-full bg-primary text-[#F7F1E7] font-caption text-[10px] leading-none flex items-center justify-center font-bold">1</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN COLLECTIONS CONTENT -->
+  <main class="w-full pt-28 bg-background main-content pb-space-5xl">
+    <div class="max-w-container-max mx-auto px-gutter-mobile md:px-gutter-desktop">
+      
+      <!-- Section Title -->
+      <div class="border-b border-border-soft pb-space-xl mb-space-3xl text-center max-w-3xl mx-auto">
+        <span class="font-label-uppercase text-label-uppercase text-accent tracking-[0.2em] uppercase font-semibold">LIMITED EDITION CAPSULES</span>
+        <h1 class="font-headline-xl text-headline-xl md:font-display-hero text-text-main pt-2">CURATED ARCHIVAL DROPS</h1>
+        <p class="font-body-lg text-body-lg text-text-secondary pt-3">
+          Every Thursday at 8 PM IST, we release themed drops of rare vintage pieces rescued and hand-graded in our Bettiah atelier.
+        </p>
+      </div>
+
+      <!-- UPCOMING DROP TIMER HERO BANNER -->
+      <div class="relative bg-secondary-dark text-[#F7F1E7] border border-border-soft mb-space-4xl overflow-hidden p-space-xl md:p-space-3xl shadow-xl">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+          <div class="lg:col-span-7 flex flex-col gap-space-md">
+            <span class="font-label-uppercase text-label-uppercase text-accent uppercase tracking-widest font-semibold">NEXT EXCLUSIVE DROP No. 19</span>
+            <h2 class="font-headline-lg md:font-headline-xl text-[#F7F1E7]">WINTER HEAVYWEIGHT KNIT & LEATHER ARCHIVE</h2>
+            <p class="font-body-md text-[#F7F1E7]/80 leading-relaxed">
+              35 handpicked Italian wool trench coats, genuine leather bomber jackets, and chunky retro sweaters launching this Thursday.
+            </p>
+            <div class="flex items-center gap-space-md pt-space-xs">
+              <div class="bg-surface-sand/10 border border-accent/40 backdrop-blur-md p-space-sm text-center min-w-[70px]">
+                <span class="font-headline-md text-accent block font-bold">02</span>
+                <span class="font-caption text-[10px] uppercase text-[#F7F1E7]/70">Days</span>
+              </div>
+              <div class="bg-surface-sand/10 border border-accent/40 backdrop-blur-md p-space-sm text-center min-w-[70px]">
+                <span class="font-headline-md text-accent block font-bold">14</span>
+                <span class="font-caption text-[10px] uppercase text-[#F7F1E7]/70">Hours</span>
+              </div>
+              <div class="bg-surface-sand/10 border border-accent/40 backdrop-blur-md p-space-sm text-center min-w-[70px]">
+                <span class="font-headline-md text-accent block font-bold">38</span>
+                <span class="font-caption text-[10px] uppercase text-[#F7F1E7]/70">Mins</span>
+              </div>
+            </div>
+          </div>
+          <div class="lg:col-span-5 relative aspect-[4/3] overflow-hidden border border-border-soft/40">
+            <img alt="Winter Heavyweight Knit Archive Preview" class="w-full h-full object-cover" src="images/hero_banner.png"/>
+          </div>
+        </div>
+      </div>
+
+      <!-- FEATURED DROPS GRID -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-space-2xl">
+
+        <!-- Collection 1 -->
+        <div class="bg-card-bg border border-border-soft overflow-hidden group flex flex-col justify-between">
+          <div class="relative aspect-[16/10] overflow-hidden bg-surface-sand">
+            <img alt="90s Graphic Tee Vault" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="images/item_vintage_band_tee.png"/>
+            <div class="absolute top-4 left-4 bg-primary text-[#F7F1E7] font-label-uppercase px-3 py-1 text-xs">DROP No. 18 • LIVE</div>
+          </div>
+          <div class="p-space-xl flex flex-col gap-space-md">
+            <div class="flex flex-col gap-1">
+              <span class="font-label-uppercase text-accent font-semibold">48 UNIQUE PIECES</span>
+              <h3 class="font-headline-md text-text-main">90s & Y2K Graphic Vault</h3>
+              <p class="font-body-md text-text-secondary pt-1">
+                Faded black band tees, bootleg movie prints, single-stitch vintage cotton, and boxy oversized streetwear cuts.
+              </p>
+            </div>
+            <div class="flex items-center justify-between border-t border-border-soft/60 pt-space-md">
+              <span class="font-label-price text-text-main font-semibold">Starting from ₹399</span>
+              <a href="shop.html?category=tshirts" class="btn-primary py-2 px-4 text-xs">EXPLORE DROP</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Collection 2 -->
+        <div class="bg-card-bg border border-border-soft overflow-hidden group flex flex-col justify-between">
+          <div class="relative aspect-[16/10] overflow-hidden bg-surface-sand">
+            <img alt="Selvedge & Chore Denim Archive" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="images/item_straight_blue_jeans.png"/>
+            <div class="absolute top-4 left-4 bg-secondary-dark text-accent border border-accent/40 font-label-uppercase px-3 py-1 text-xs">DROP No. 17 • ALMOST SOLD OUT</div>
+          </div>
+          <div class="p-space-xl flex flex-col gap-space-md">
+            <div class="flex flex-col gap-1">
+              <span class="font-label-uppercase text-accent font-semibold">32 UNIQUE PIECES</span>
+              <h3 class="font-headline-md text-text-main">Authentic Selvedge & Denim Archive</h3>
+              <p class="font-body-md text-text-secondary pt-1">
+                Natural washed blue denim, straight leg, carpenter utility loops, and distressed trucker jackets with authentic patina.
+              </p>
+            </div>
+            <div class="flex items-center justify-between border-t border-border-soft/60 pt-space-md">
+              <span class="font-label-price text-text-main font-semibold">Starting from ₹699</span>
+              <a href="shop.html?category=jeans" class="btn-primary py-2 px-4 text-xs">EXPLORE DROP</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Collection 3 -->
+        <div class="bg-card-bg border border-border-soft overflow-hidden group flex flex-col justify-between">
+          <div class="relative aspect-[16/10] overflow-hidden bg-surface-sand">
+            <img alt="Atelier Bettiah Special Bundles" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="images/atelier_bessiah.png"/>
+            <div class="absolute top-4 left-4 bg-accent text-secondary-dark font-label-uppercase px-3 py-1 text-xs font-bold">BETTIAH SPECIAL • LOOKBOOK</div>
+          </div>
+          <div class="p-space-xl flex flex-col gap-space-md">
+            <div class="flex flex-col gap-1">
+              <span class="font-label-uppercase text-accent font-semibold">CURATED COMBOS</span>
+              <h3 class="font-headline-md text-text-main">Complete Lookbook Combos Under ₹1000</h3>
+              <p class="font-body-md text-text-secondary pt-1">
+                Full 2-piece outfits paired by Bettiah stylists. Vintage tees + washed denim, linen shirts + pleated trousers.
+              </p>
+            </div>
+            <div class="flex items-center justify-between border-t border-border-soft/60 pt-space-md">
+              <span class="font-label-price text-text-main font-semibold">Combo ₹899 - ₹999</span>
+              <a href="index.html#under1000" class="btn-primary py-2 px-4 text-xs">VIEW COMBOS</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Collection 4 -->
+        <div class="bg-card-bg border border-border-soft overflow-hidden group flex flex-col justify-between">
+          <div class="relative aspect-[16/10] overflow-hidden bg-surface-sand">
+            <img alt="B2B Reseller Mystery Bales" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="images/category_graphic_tees.png"/>
+            <div class="absolute top-4 left-4 bg-primary text-[#F7F1E7] font-label-uppercase px-3 py-1 text-xs">B2B WHOLESALE • BUNDLES</div>
+          </div>
+          <div class="p-space-xl flex flex-col gap-space-md">
+            <div class="flex flex-col gap-1">
+              <span class="font-label-uppercase text-accent font-semibold">FOR STORE OWNERS & RESELLERS</span>
+              <h3 class="font-headline-md text-text-main">B2B Wholesale Bales (50 - 200 Pcs)</h3>
+              <p class="font-body-md text-text-secondary pt-1">
+                High-margin curated mystery bales shipped directly to resellers across India with guaranteed grading quality.
+              </p>
+            </div>
+            <div class="flex items-center justify-between border-t border-border-soft/60 pt-space-md">
+              <span class="font-label-price text-text-main font-semibold">From ₹14,999 / Bale</span>
+              <a href="wholesale.html" class="btn-primary py-2 px-4 text-xs">VIEW WHOLESALE</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- SEARCH MODAL -->
+  <div id="search-modal" class="modal-overlay">
+    <div class="modal-box">
+      <div class="flex items-center justify-between border-b border-border-soft pb-space-sm mb-space-md">
+        <span class="font-label-uppercase text-label-uppercase text-accent font-semibold">SEARCH ARCHIVE CATALOG</span>
+        <button id="close-search-btn" class="text-text-secondary hover:text-text-main p-1 cursor-pointer" type="button">
+          <span class="material-symbols-outlined text-[20px]">close</span>
+        </button>
+      </div>
+      <input id="search-input" type="text" placeholder="Search by item, category, size or code..." class="w-full bg-surface-sand border border-border-soft px-4 py-3 text-text-main text-sm focus:outline-none focus:border-primary"/>
+    </div>
+  </div>
+
+  <!-- CART DRAWER -->
+  <div id="cart-drawer" class="drawer-overlay">
+    <div class="drawer-content">
+      <div class="flex items-center justify-between border-b border-border-soft pb-space-md mb-space-md">
+        <div class="flex items-center gap-2">
+          <span class="font-title-editorial text-title-editorial text-text-main font-semibold">YOUR ARCHIVE BAG</span>
+          <span id="cart-drawer-count" class="font-caption text-caption text-accent">(1 Item)</span>
+        </div>
+        <button id="close-cart-btn" class="text-text-secondary hover:text-text-main p-1 cursor-pointer" type="button">
+          <span class="material-symbols-outlined text-[20px]">close</span>
+        </button>
+      </div>
+      <div id="cart-items-list" class="flex-1 overflow-y-auto flex flex-col gap-space-md pr-1"></div>
+      <div class="border-t border-border-soft pt-space-md mt-space-md flex flex-col gap-space-md">
+        <div class="flex items-center justify-between">
+          <span class="font-body-md text-body-md text-text-secondary">Subtotal</span>
+          <span id="cart-subtotal" class="font-headline-sm text-headline-sm text-text-main font-semibold">₹4,499</span>
+        </div>
+        <a href="cart.html" class="btn-primary text-center flex items-center justify-center gap-2">
+          <span>PROCEED TO CHECKOUT</span>
+          <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast-container" class="toast-container"></div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="max-w-container-max mx-auto px-gutter-mobile md:px-gutter-desktop">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-space-2xl pb-space-3xl border-b border-white/10">
+        <div class="flex flex-col gap-space-sm">
+          <div class="flex items-center gap-space-xs">
+            <img alt="Brand Logo" class="h-8 w-auto object-contain rounded" src="images/nawab_logo.png"/>
+            <span class="font-title-editorial text-title-editorial text-[#F7F1E7]">THRIFT STORE BY NAWAB</span>
+          </div>
+          <p class="font-body-sm text-body-sm text-[#F7F1E7]/70">Curated vintage & archival recommerce from Bettiah, Bihar.</p>
+        </div>
+        <div class="flex flex-col gap-space-sm">
+          <span class="font-label-uppercase text-accent font-semibold">Navigation</span>
+          <nav class="flex flex-col gap-space-xs">
+            <a class="font-body-sm" href="shop.html">Shop Catalogue</a>
+            <a class="font-body-sm" href="collections.html">Collections</a>
+          </nav>
+        </div>
+        <div class="flex flex-col gap-space-sm">
+          <span class="font-label-uppercase text-accent font-semibold">B2B Trade</span>
+          <nav class="flex flex-col gap-space-xs">
+            <a class="font-body-sm" href="wholesale.html">Wholesale Bales</a>
+          </nav>
+        </div>
+        <div class="flex flex-col gap-space-sm">
+          <span class="font-label-uppercase text-accent font-semibold">Company</span>
+          <nav class="flex flex-col gap-space-xs">
+            <a class="font-body-sm" href="about.html">About Us</a>
+            <a class="font-body-sm" href="contact.html">Contact Us</a>
+          </nav>
+        </div>
+      </div>
+      <div class="pt-space-xl flex flex-col md:flex-row items-center justify-between text-xs text-[#F7F1E7]/60">
+        <p>© 2026 Thrift Store by Nawab. Bettiah, Bihar, India.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shop All Curated Thrift | Thrift Store by Nawab - Bettiah, Bihar</title>
+  <meta name="description" content="Explore handpicked vintage graphic tees, authentic denim, linen shirts, and chore jackets shipped from Bettiah, Bihar across India."/>
+  
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "primary": "#641C2D",
+            "primary-hover": "#4a1421",
+            "secondary-dark": "#3A241F",
+            "accent": "#B08A4A",
+            "background": "#F7F1E7",
+            "surface-sand": "#EFE4D2",
+            "card-bg": "#FFFDF8",
+            "border-soft": "#D8C8B5",
+            "hover-bg": "#E9DCC9",
+            "text-main": "#24201E",
+            "text-secondary": "#77706A"
+          },
+          "borderRadius": {
+            "DEFAULT": "0px",
+            "lg": "0px",
+            "xl": "0px",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-3xs": "0.125rem",
+            "space-2xs": "0.25rem",
+            "space-xs": "0.5rem",
+            "space-sm": "0.75rem",
+            "space-md": "1rem",
+            "space-lg": "1.5rem",
+            "space-xl": "2rem",
+            "space-2xl": "3rem",
+            "space-3xl": "4rem",
+            "space-4xl": "6rem",
+            "space-5xl": "8rem",
+            "gutter-mobile": "1rem",
+            "gutter-desktop": "2rem",
+            "container-max": "88rem"
+          },
+          "fontFamily": {
+            "display-hero": [ "Playfair Display", "Georgia", "serif" ],
+            "headline-xl": [ "Playfair Display", "Georgia", "serif" ],
+            "headline-lg": [ "Playfair Display", "Georgia", "serif" ],
+            "headline-md": [ "Playfair Display", "Georgia", "serif" ],
+            "headline-sm": [ "Playfair Display", "Georgia", "serif" ],
+            "title-editorial": [ "Playfair Display", "Georgia", "serif" ],
+            "body-lg": [ "Plus Jakarta Sans", "sans-serif" ],
+            "body-md": [ "Plus Jakarta Sans", "sans-serif" ],
+            "body-sm": [ "Plus Jakarta Sans", "sans-serif" ],
+            "caption": [ "Plus Jakarta Sans", "sans-serif" ],
+            "label-uppercase": [ "Plus Jakarta Sans", "sans-serif" ],
+            "label-price": [ "Plus Jakarta Sans", "sans-serif" ]
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-background font-body-md text-text-main antialiased selection:bg-surface-sand selection:text-text-main">
+
+  <!-- STICKY HEADER -->
+  <header class="fixed top-0 left-0 w-full z-40 bg-[#F7F1E7]/95 backdrop-blur-md border-b border-border-soft/60 shadow-[0_1px_8px_rgba(0,0,0,0.03)]">
+    <!-- Announcement Bar -->
+    <div class="bg-primary text-[#F7F1E7] py-space-2xs px-gutter-mobile md:px-gutter-desktop text-center">
+      <p class="font-label-uppercase text-label-uppercase tracking-widest uppercase text-accent font-semibold">
+        FREE EXPRESS SHIPPING ON ORDERS OVER ₹1499 • BETTIAH, BIHAR
+      </p>
+    </div>
+    <!-- Main Header Bar -->
+    <div class="h-20 max-w-container-max mx-auto px-gutter-mobile md:px-gutter-desktop flex items-center justify-between">
+      <div class="flex items-center gap-space-md">
+        <a class="flex items-center gap-space-sm text-decoration-none" href="index.html">
+          <img alt="Thrift Store By Nawab Brand Logo" class="h-10 w-auto object-contain rounded border border-accent/40 shadow-sm" src="images/nawab_logo.png"/>
+          <div class="flex flex-col">
+            <span class="font-title-editorial text-title-editorial tracking-wider text-text-main font-semibold uppercase">Thrift Store By Nawab</span>
+            <span class="font-caption text-caption text-text-secondary tracking-widest uppercase hidden sm:inline">Bettiah • Archival Recommerce</span>
+          </div>
+        </a>
+      </div>
+      <!-- Nav Links -->
+      <nav class="hidden lg:flex items-center gap-space-xl" id="desktop-nav">
+        <a class="nav-link font-label-uppercase text-label-uppercase text-text-secondary hover:text-primary transition-colors py-space-xs uppercase" href="index.html">Home</a>
+        <a aria-current="page" class="nav-link active transition-colors py-space-xs font-label-uppercase text-label-uppercase uppercase text-primary font-bold border-b-2 border-primary" href="shop.html">Shop</a>
+        <a class="nav-link font-label-uppercase text-label-uppercase text-text-secondary hover:text-primary transition-colors py-space-xs uppercase" href="collections.html">Collections</a>
+        <a class="nav-link font-label-uppercase text-label-uppercase text-text-secondary hover:text-primary transition-colors py-space-xs uppercase" href="wholesale.html">Wholesale</a>
+        <a class="nav-link font-label-uppercase text-label-uppercase text-text-secondary hover:text-primary transition-colors py-space-xs uppercase" href="about.html">About Us</a>
+        <a class="nav-link font-label-uppercase text-label-uppercase text-text-secondary hover:text-primary transition-colors py-space-xs uppercase" href="contact.html">Contact</a>
+      </nav>
+      <!-- Action Icons -->
+      <div class="flex items-center gap-space-sm md:gap-space-md">
+        <button id="open-search-btn" aria-label="Search catalog" class="p-space-xs text-text-secondary hover:text-text-main transition-colors cursor-pointer" type="button">
+          <span class="material-symbols-outlined text-[22px]">search</span>
+        </button>
+        <button id="open-wishlist-btn" aria-label="Wishlist" class="relative p-space-xs text-text-secondary hover:text-text-main transition-colors cursor-pointer" type="button">
+          <span class="material-symbols-outlined text-[22px]">favorite</span>
+          <span id="wishlist-badge" class="absolute top-1 right-1 w-4 h-4 rounded-full bg-primary text-[#F7F1E7] font-caption text-[10px] leading-none flex items-center justify-center font-bold">2</span>
+        </button>
+        <button id="open-cart-btn" aria-label="Open cart" class="relative p-space-xs text-text-secondary hover:text-text-main transition-colors cursor-pointer" type="button">
+          <span class="material-symbols-outlined text-[22px]">shopping_bag</span>
+          <span id="cart-badge" class="absolute top-1 right-1 w-4 h-4 rounded-full bg-primary text-[#F7F1E7] font-caption text-[10px] leading-none flex items-center justify-center font-bold">1</span>
+        </button>
+        <a href="cart.html" class="pl-space-2xs hidden sm:block">
+          <div class="h-9 px-space-md bg-secondary-dark text-[#F7F1E7] hover:bg-primary transition-colors flex items-center justify-center font-label-uppercase text-label-uppercase uppercase text-[11px]">
+            Checkout
+          </div>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN SHOP CONTENT -->
+  <main class="w-full pt-28 bg-background main-content pb-space-5xl">
+    <div class="max-w-container-max mx-auto px-gutter-mobile md:px-gutter-desktop">
+      
+      <!-- Page Title & Header -->
+      <div class="border-b border-border-soft pb-space-xl mb-space-2xl">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+          <div class="flex flex-col gap-space-2xs">
+            <span class="font-label-uppercase text-label-uppercase text-accent tracking-[0.2em] uppercase font-semibold">BETTIAH ARCHIVES</span>
+            <h1 class="font-headline-xl text-headline-xl text-text-main">FULL CATALOGUE</h1>
+            <p class="font-body-md text-body-md text-text-secondary">Authentic 1-of-1 vintage clothing, steam sanitized & ready to wear.</p>
+          </div>
+          <div class="flex items-center gap-space-md">
+            <span class="font-caption text-caption text-text-secondary">Showing <strong class="text-text-main">12</strong> rare drops</span>
+            <select id="sort-select" class="bg-surface-sand border border-border-soft text-text-main text-xs font-label-uppercase py-2 px-3 focus:ring-primary focus:border-primary">
+              <option value="featured">Sort: Featured Drops</option>
+              <option value="low-high">Price: Low to High</option>
+              <option value="high-low">Price: High to Low</option>
+              <option value="newest">Latest Drop First</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Filter Pill Tabs -->
+        <div class="flex items-center gap-space-xs overflow-x-auto pt-space-lg no-scrollbar" id="category-tabs">
+          <button class="filter-tab active px-space-md py-space-xs bg-primary text-[#F7F1E7] font-label-uppercase text-label-uppercase uppercase cursor-pointer border border-primary transition-all whitespace-nowrap" data-cat="all">All Drops (12)</button>
+          <button class="filter-tab px-space-md py-space-xs bg-surface-sand text-text-main hover:bg-hover-bg font-label-uppercase text-label-uppercase uppercase cursor-pointer border border-border-soft transition-all whitespace-nowrap" data-cat="tshirts">T-Shirts (3)</button>
+          <button class="filter-tab px-space-md py-space-xs bg-surface-sand text-text-main hover:bg-hover-bg font-label-uppercase text-label-uppercase uppercase cursor-pointer border border-border-soft transition-all whitespace-nowrap" data-cat="shirts">Shirts (2)</button>
+          <button class="filter-tab px-space-md py-space-xs bg-surface-sand text-text-main hover:bg-hover-bg font-label-uppercase text-label-uppercase uppercase cursor-pointer border border-border-soft transition-all whitespace-nowrap" data-cat="jeans">Jeans & Trousers (3)</button>
+          <button class="filter-tab px-space-md py-space-xs bg-surface-sand text-text-main hover:bg-hover-bg font-label-uppercase text-label-uppercase uppercase cursor-pointer border border-border-soft transition-all whitespace-nowrap" data-cat="jackets">Jackets & Coats (2)</button>
+          <button class="filter-tab px-space-md py-space-xs bg-surface-sand text-text-main hover:bg-hover-bg font-label-uppercase text-label-uppercase uppercase cursor-pointer border border-border-soft transition-all whitespace-nowrap" data-cat="sweaters">Sweaters (2)</button>
+        </div>
+      </div>
+
+      <!-- Shop Product Grid -->
+      <div class="product-grid" id="shop-product-grid">
+        
+        <!-- Product 1 -->
+        <div class="product-card group" data-category="tshirts" data-title="Vintage 90s Heavyweight Band Tee" data-price="499" data-code="Bettiah Archive #91" data-image="images/item_vintage_band_tee.png">
+          <div class="product-image-container">
+            <img alt="Vintage 90s faded black graphic band t-shirt" src="images/item_vintage_band_tee.png"/>
+            <button aria-label="Save to wishlist" class="wishlist-btn" type="button">
+              <span class="material-symbols-outlined text-[20px]">favorite</span>
+            </button>
+            <span class="condition-badge font-caption text-caption">Condition: 9/10 Mint</span>
+          </div>
+          <div class="product-info">
+            <div class="flex flex-col gap-space-3xs">
+              <div class="flex items-center justify-between">
+                <span class="font-label-uppercase text-label-uppercase text-accent uppercase font-medium">Bettiah Archive #91</span>
+                <span class="font-caption text-[11px] bg-surface-sand px-2 py-0.5 border border-border-soft">Size L</span>
+              </div>
+              <h3 class="font-title-editorial text-title-editorial text-text-main font-semibold pt-1">Vintage 90s Heavyweight Band Tee</h3>
+            </div>
+            <div class="pt-space-md flex items-center justify-between">
+              <div>
+                <span class="font-label-price text-label-price text-text-main font-semibold">₹499</span>
+                <span class="text-xs text-text-secondary line-through pl-1">₹1,499</span>
+              </div>
+              <button class="add-to-bag-btn" type="button">Add to Bag</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card group" data-category="shirts" data-title="Premium Linen Washed Overshirt" data-price="599" data-code="Bettiah Archive #114" data-image="images/item_linen_shirt.png">
+          <div class="product-image-container">
+            <img alt="Beige brushed premium oxford cotton shirt" src="images/item_linen_shirt.png"/>
+            <button aria-label="Save to wishlist" class="wishlist-btn" type="button">
+              <span class="material-symbols-outlined text-[20px]">favorite</span>
+            </button>
+            <span class="condition-badge font-caption text-caption">Condition: Excellent</span>
+          </div>
+          <div class="product-info">
+            <div class="flex flex-col gap-space-3xs">
+              <div class="flex items-center justify-between">
+                <span class="font-label-uppercase text-label-uppercase text-accent uppercase font-medium">Bettiah Archive #114</span>
+                <span class="font-caption text-[11px] bg-surface-sand px-2 py-0.5 border border-border-soft">Size M</span>
+              </div>
+              <h3 class="font-title-editorial text-title-editorial text-text-main font-semibold pt-1">Premium Linen Washed Overshirt</h3>
+            </div>
+            <div class="pt-space-md flex items-center justify-between">
+              <div>
+                <span class="font-label-price text-label-price text-text-main font-semibold">₹599</span>
+                <span class="text-xs text-text-secondary line-through pl-1">₹1,899</span>
+              </div>
+              <button class="add-to-bag-btn" type="button">Add to Bag</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card group" data-category="jeans" data-title="Classic Medium Wash Straight Denim" data-price="699" data-code="Bettiah Archive #202" data-image="images/item_straight_blue_jeans.png">
+          <div class="product-image-container">
+            <img alt="Classic medium-wash relaxed straight-leg denim jeans" src="images/item_straight_blue_jeans.png"/>
+            <button aria-label="Save to wishlist" class="wishlist-btn" type="button">
+              <span class="material-symbols-outlined text-[20px]">favorite</span>
+            </button>
+            <span class="condition-badge font-caption text-caption">Condition: Authentic Vintage</span>
+          </div>
+          <div class="product-info">
+            <div class="flex flex-col gap-space-3xs">
+              <div class="flex items-center justify-between">
+                <span class="font-label-uppercase text-label-uppercase text-accent uppercase font-medium">Bettiah Archive #202</span>
+                <span class="font-caption text-[11px] bg-surface-sand px-2 py-0.5 border border-border-soft">W32 L32</span>
+              </div>
+              <h3 class="font-title-editorial text-title-editorial text-text-main font-semibold pt-1">Classic Medium Wash Straight Denim</h3>
+            </div>
+            <div class="pt-space-md flex items-center justify-between">
+              <div>
+                <span class="font-label-price text-label-price text-text-main font-semibold">₹699</span>
+                <span class="text-xs text-text-secondary line-through pl-1">₹2,499</span>
+              </div>
+              <button class="add-to-bag-btn" type="button">Add to Bag</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card group" data-category="tshirts" data-title="Oversized Boxy Streetwear Graphic Tee" data-price="399" data-code="Bettiah Archive #77" data-image="images/item_oversized_cream_tee.png">
+          <div class="product-image-container">
+            <img alt="Heavyweight cream boxy oversized streetwear t-shirt" src="images/item_oversized_cream_tee.png"/>
+            <button aria-label="Save to wishlist" class="wishlist-btn" type="button">
+              <span class="material-symbols-outlined text-[20px]">favorite</span>
+            </button>
+            <span class="condition-badge font-caption text-caption">Condition: 9.5/10 Like New</span>
+          </div>
+          <div class="product-info">
+            <div class="flex flex-col gap-space-3xs">
+              <div class="flex items-center justify-between">
+                <span class="font-label-uppercase text-label-uppercase text-accent uppercase font-medium">Bettiah Archive #77</span>
+                <span class="font-caption text-[11px] bg-surface-sand px-2 py-0.5 border border-border-soft">Size XL</span>
+              </div>
+              <h3 class="font-title-editorial text-title-editorial text-text-main font-semibold pt-1">Oversized Boxy Streetwear Graphic Tee</h3>
+            </div>
+            <div class="pt-space-md flex items-center justify-between">
+              <div>
+                <span class="font-label-price text-label-price text-text-main font-semibold">₹399</span>
+                <span class="text-xs text-text-secondary line-through pl-1">₹1,299</span>
+              </div>
+              <button class="add-to-bag-btn" type="button">Add to Bag</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product-card group" data-category="sweaters" data-title="Textured Cable Knit Wool Sweater" data-price="799" data-code="Bettiah Archive #312" data-image="images/item_linen_shirt.png">
+          <div class="product-image-container">
+            <img alt="Textured vintage knit wool sweater in rich oatmeal color" src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=600&q=80"/>
+            <button aria-label="Save to wishlist" class="wishlist-btn" type="button">
+              <span class="material-symbols-outlined text-[20px]">favorite</span>
+            </button>
+            <span class="condition-badge font-caption text-caption">Condition: Excellent</span>
+          </div>
+          <div class="product-info">
+            <div class="flex flex-col gap-space-3xs">
+              <div class="flex items-center justify-between">
+                <span class="font-label-uppercase text-label-uppercase text-accent uppercase font-medium">Bettiah Archive #312</span>
+                <span class="font-caption text-[11px] bg-surface-sand px-2 py-0.5 border border-border-soft">Size M</span>
+              </div>
+              <h3 class="font-title-editorial text-title-editorial text-text-main font-semibold pt-1">Textured Cable Knit Wool Sweater</h3>
+            </div>
+            <div class="pt-space-md flex items-center justify-between">
+              <div>
+                <span class="font-label-price text-label-price text-text-main font-semibold">₹799</span>
+                <span class="text-xs text-text-secondary line-through pl-1">₹2,999</span>
+              </div>
+              <button class="add-to-bag-btn" type="button">Add to Bag</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product-card group" data-category="jackets" data-title="Retro 90s Nylon Colorblock Windbreaker" data-price="899" data-code="Bettiah Archive #88" data-image="images/item_track_jacket.png">
+          <div class="product-image-container">
+            <img alt="Retro 90s nylon windbreaker track jacket" src="images/item_track_jacket.png"/>
+            <button aria-label="Save to wishlist" class="wishlist-btn" type="button">
+              <span class="material-symbols-outlined text-[20px]">favorite</span>
+            </button>
+            <span class="condition-badge font-caption text-caption">Condition: Rare Find</span>
+          </div>
+          <div class="product-info">
+            <div class="flex flex-col gap-space-3xs">
+              <div class="flex items-center justify-between">
+                <span class="font-label-uppercase text-label-uppercase text-accent uppercase font-medium">Bettiah Archive #88</span>
+                <span class="font-caption text-[11px] bg-surface-sand px-2 py-0.5 border border-border-soft">Size L</span>
+              </div>
+              <h3 class="font-title-editorial text-title-editorial text-text-main font-semibold pt-1">Retro 90s Nylon Colorblock Windbreaker</h3>
+            </div>
+            <div class="pt-space-md flex items-center justify-between">
+              <div>
+                <span class="font-label-price text-label-price text-text-main font-semibold">₹899</span>
+                <span class="text-xs text-text-secondary line-through pl-1">₹3,499</span>
+              </div>
+              <button class="add-to-bag-btn" type="button">Add to Bag</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 7 -->
+        <div class="product-card group" data-category="shirts" data-title="Utility Cotton Flannel Checked Shirt" data-price="549" data-code="Bettiah Archive #152" data-image="images/item_flannel_shirt.png">
+          <div class="product-image-container">
+            <img alt="Crisp tailored muted olive green casual utility shirt" src="images/item_flannel_shirt.png"/>
+            <button aria-label="Save to wishlist" class="wishlist-btn" type="button">
+              <span class="material-symbols-outlined text-[20px]">favorite</span>
+            </button>
+            <span class="condition-badge font-caption text-caption">Condition: Very Good</span>
+          </div>
+          <div class="product-info">
+            <div class="flex flex-col gap-space-3xs">
+              <div class="flex items-center justify-between">
+                <span class="font-label-uppercase text-label-uppercase text-accent uppercase font-medium">Bettiah Archive #152</span>
+                <span class="font-caption text-[11px] bg-surface-sand px-2 py-0.5 border border-border-soft">Size M</span>
+              </div>
+              <h3 class="font-title-editorial text-title-editorial text-text-main font-semibold pt-1">Utility Cotton Flannel Checked Shirt</h3>
+            </div>
+            <div class="pt-space-md flex items-center justify-between">
+              <div>
+                <span class="font-label-price text-label-price text-text-main font-semibold">₹549</span>
+                <span class="text-xs text-text-secondary line-through pl-1">₹1,799</span>
+              </div>
+              <button class="add-to-bag-btn" type="button">Add to Bag</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 8 -->
+        <div class="product-card group" data-category="jackets" data-title="Distressed Heavyweight Trucker Denim Jacket" data-price="999" data-code="Bettiah Archive #409" data-image="images/item_denim_trucker_jacket.png">
+          <div class="product-image-container">
+            <img alt="Heavyweight authentic distressed trucker denim jacket" src="images/item_denim_trucker_jacket.png"/>
+            <button aria-label="Save to wishlist" class="wishlist-btn" type="button">
+              <span class="material-symbols-outlined text-[20px]">favorite</span>
+            </button>
+            <span class="condition-badge font-caption text-caption">Condition: Archival Grail</span>
+          </div>
+          <div class="product-info">
+            <div class="flex flex-col gap-space-3xs">
+              <div class="flex items-center justify-between">
+                <span class="font-label-uppercase text-label-uppercase text-accent uppercase font-medium">Bettiah Archive #409</span>
+                <span class="font-caption text-[11px] bg-surface-sand px-2 py-0.5 border border-border-soft">Size L</span>
+              </div>
+              <h3 class="font-title-editorial text-title-editorial text-text-main font-semibold pt-1">Distressed Heavyweight Trucker Denim Jacket</h3>
+            </div>
+            <div class="pt-space-md flex items-center justify-between">
+              <div>
+                <span class="font-label-price text-label-price text-text-main font-semibold">₹999</span>
+                <span class="text-xs text-text-secondary line-through pl-1">₹3,999</span>
+              </div>
+              <button class="add-to-bag-btn" type="button">Add to Bag</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 9 -->
+        <div class="product-card group" data-category="tshirts" data-title="Vintage Japanese Typography Print Tee" data-price="449" data-code="Bettiah Archive #98" data-image="images/item_vintage_band_tee.png">
+          <div class="product-image-container">
+            <img alt="Vintage graphic Japanese typography print tee" src="images/item_vintage_band_tee.png"/>
+            <button aria-label="Save to wishlist" class="wishlist-btn" type="button">
+              <span class="material-symbols-outlined text-[20px]">favorite</span>
+            </button>
+            <span class="condition-badge font-caption text-caption">Condition: Excellent</span>
+          </div>
+          <div class="product-info">
+            <div class="flex flex-col gap-space-3xs">
+              <div class="flex items-center justify-between">
+                <span class="font-label-uppercase text-label-uppercase text-accent uppercase font-medium">Bettiah Archive #98</span>
+                <span class="font-caption text-[11px] bg-surface-sand px-2 py-0.5 border border-border-soft">Size M</span>
+              </div>
+              <h3 class="font-title-editorial text-title-editorial text-text-main font-semibold pt-1">Vintage Japanese Typography Print Tee</h3>
+            </div>
+            <div class="pt-space-md flex items-center justify-between">
+              <div>
+                <span class="font-label-price text-label-price text-text-main font-semibold">₹449</span>
+                <span class="text-xs text-text-secondary line-through pl-1">₹1,399</span>
+              </div>
+              <button class="add-to-bag-btn" type="button">Add to Bag</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 10 -->
+        <div class="product-card group" data-category="jeans" data-title="Vintage Pleated Dark Trousers" data-price="649" data-code="Bettiah Archive #215" data-image="images/item_straight_blue_jeans.png">
+          <div class="product-image-container">
+            <img alt="Dark pleated vintage tailored trousers" src="images/item_straight_blue_jeans.png"/>
+            <button aria-label="Save to wishlist" class="wishlist-btn" type="button">
+              <span class="material-symbols-outlined text-[20px]">favorite</span>
+            </button>
+            <span class="condition-badge font-caption text-caption">Condition: Very Good</span>
+          </div>
+          <div class="product-info">
+            <div class="flex flex-col gap-space-3xs">
+              <div class="flex items-center justify-between">
+                <span class="font-label-uppercase text-label-uppercase text-accent uppercase font-medium">Bettiah Archive #215</span>
+                <span class="font-caption text-[11px] bg-surface-sand px-2 py-0.5 border border-border-soft">W30 L30</span>
+              </div>
+              <h3 class="font-title-editorial text-title-editorial text-text-main font-semibold pt-1">Vintage Pleated Dark Trousers</h3>
+            </div>
+            <div class="pt-space-md flex items-center justify-between">
+              <div>
+                <span class="font-label-price text-label-price text-text-main font-semibold">₹649</span>
+                <span class="text-xs text-text-secondary line-through pl-1">₹2,199</span>
+              </div>
+              <button class="add-to-bag-btn" type="button">Add to Bag</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 11 -->
+        <div class="product-card group" data-category="sweaters" data-title="Chunky Ribbed Vintage Mockneck Sweater" data-price="749" data-code="Bettiah Archive #330" data-image="images/item_linen_shirt.png">
+          <div class="product-image-container">
+            <img alt="Chunky ribbed knit mockneck sweater" src="images/item_linen_shirt.png"/>
+            <button aria-label="Save to wishlist" class="wishlist-btn" type="button">
+              <span class="material-symbols-outlined text-[20px]">favorite</span>
+            </button>
+            <span class="condition-badge font-caption text-caption">Condition: Like New</span>
+          </div>
+          <div class="product-info">
+            <div class="flex flex-col gap-space-3xs">
+              <div class="flex items-center justify-between">
+                <span class="font-label-uppercase text-label-uppercase text-accent uppercase font-medium">Bettiah Archive #330</span>
+                <span class="font-caption text-[11px] bg-surface-sand px-2 py-0.5 border border-border-soft">Size L</span>
+              </div>
+              <h3 class="font-title-editorial text-title-editorial text-text-main font-semibold pt-1">Chunky Ribbed Vintage Mockneck Sweater</h3>
+            </div>
+            <div class="pt-space-md flex items-center justify-between">
+              <div>
+                <span class="font-label-price text-label-price text-text-main font-semibold">₹749</span>
+                <span class="text-xs text-text-secondary line-through pl-1">₹2,599</span>
+              </div>
+              <button class="add-to-bag-btn" type="button">Add to Bag</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 12 -->
+        <div class="product-card group" data-category="jeans" data-title="Relaxed Loose Carpenter Denim Jeans" data-price="799" data-code="Bettiah Archive #240" data-image="images/item_carpenter_jeans.png">
+          <div class="product-image-container">
+            <img alt="Relaxed carpenter style denim jeans with utility loops" src="images/item_carpenter_jeans.png"/>
+            <button aria-label="Save to wishlist" class="wishlist-btn" type="button">
+              <span class="material-symbols-outlined text-[20px]">favorite</span>
+            </button>
+            <span class="condition-badge font-caption text-caption">Condition: 9/10</span>
+          </div>
+          <div class="product-info">
+            <div class="flex flex-col gap-space-3xs">
+              <div class="flex items-center justify-between">
+                <span class="font-label-uppercase text-label-uppercase text-accent uppercase font-medium">Bettiah Archive #240</span>
+                <span class="font-caption text-[11px] bg-surface-sand px-2 py-0.5 border border-border-soft">W34 L32</span>
+              </div>
+              <h3 class="font-title-editorial text-title-editorial text-text-main font-semibold pt-1">Relaxed Loose Carpenter Denim Jeans</h3>
+            </div>
+            <div class="pt-space-md flex items-center justify-between">
+              <div>
+                <span class="font-label-price text-label-price text-text-main font-semibold">₹799</span>
+                <span class="text-xs text-text-secondary line-through pl-1">₹2,899</span>
+              </div>
+              <button class="add-to-bag-btn" type="button">Add to Bag</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- SEARCH MODAL -->
+  <div id="search-modal" class="modal-overlay">
+    <div class="modal-box">
+      <div class="flex items-center justify-between border-b border-border-soft pb-space-sm mb-space-md">
+        <span class="font-label-uppercase text-label-uppercase text-accent font-semibold">SEARCH ARCHIVE CATALOG</span>
+        <button id="close-search-btn" class="text-text-secondary hover:text-text-main p-1 cursor-pointer" type="button">
+          <span class="material-symbols-outlined text-[20px]">close</span>
+        </button>
+      </div>
+      <div class="relative">
+        <input id="search-input" type="text" placeholder="Search by item, category, size or code..." class="w-full bg-surface-sand border border-border-soft px-4 py-3 text-text-main text-sm focus:outline-none focus:border-primary"/>
+      </div>
+    </div>
+  </div>
+
+  <!-- CART DRAWER -->
+  <div id="cart-drawer" class="drawer-overlay">
+    <div class="drawer-content">
+      <div class="flex items-center justify-between border-b border-border-soft pb-space-md mb-space-md">
+        <div class="flex items-center gap-2">
+          <span class="font-title-editorial text-title-editorial text-text-main font-semibold">YOUR ARCHIVE BAG</span>
+          <span id="cart-drawer-count" class="font-caption text-caption text-accent">(1 Item)</span>
+        </div>
+        <button id="close-cart-btn" class="text-text-secondary hover:text-text-main p-1 cursor-pointer" type="button">
+          <span class="material-symbols-outlined text-[20px]">close</span>
+        </button>
+      </div>
+      <div id="cart-items-list" class="flex-1 overflow-y-auto flex flex-col gap-space-md pr-1"></div>
+      <div class="border-t border-border-soft pt-space-md mt-space-md flex flex-col gap-space-md">
+        <div class="flex items-center justify-between">
+          <span class="font-body-md text-body-md text-text-secondary">Subtotal</span>
+          <span id="cart-subtotal" class="font-headline-sm text-headline-sm text-text-main font-semibold">₹4,499</span>
+        </div>
+        <a id="checkout-btn" href="cart.html" class="btn-primary text-center flex items-center justify-center gap-2">
+          <span>PROCEED TO CHECKOUT</span>
+          <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST CONTAINER -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="max-w-container-max mx-auto px-gutter-mobile md:px-gutter-desktop">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-space-2xl pb-space-3xl border-b border-white/10">
+        <div class="flex flex-col gap-space-sm">
+          <div class="flex items-center gap-space-xs">
+            <img alt="Brand Logo" class="h-8 w-auto object-contain rounded" src="images/nawab_logo.png"/>
+            <span class="font-title-editorial text-title-editorial text-[#F7F1E7]">THRIFT STORE BY NAWAB</span>
+          </div>
+          <p class="font-body-sm text-body-sm text-[#F7F1E7]/70">Curated vintage & archival recommerce. Steam-sanitized drops shipped direct from Bettiah, Bihar.</p>
+        </div>
+        <div class="flex flex-col gap-space-sm">
+          <span class="font-label-uppercase text-label-uppercase text-accent uppercase font-semibold">Shop Curations</span>
+          <nav class="flex flex-col gap-space-xs">
+            <a class="font-body-sm text-body-sm" href="shop.html">Archival Drops</a>
+            <a class="font-body-sm text-body-sm" href="shop.html?category=tshirts">Vintage Graphic Tees</a>
+            <a class="font-body-sm text-body-sm" href="shop.html?category=jeans">Authentic Denim</a>
+          </nav>
+        </div>
+        <div class="flex flex-col gap-space-sm">
+          <span class="font-label-uppercase text-label-uppercase text-accent uppercase font-semibold">Wholesale</span>
+          <nav class="flex flex-col gap-space-xs">
+            <a class="font-body-sm text-body-sm" href="wholesale.html">B2B Vintage Bundles</a>
+            <a class="font-body-sm text-body-sm" href="wholesale.html#calculator">Profit Calculator</a>
+          </nav>
+        </div>
+        <div class="flex flex-col gap-space-sm">
+          <span class="font-label-uppercase text-label-uppercase text-accent uppercase font-semibold">Connect</span>
+          <nav class="flex flex-col gap-space-xs">
+            <a class="font-body-sm text-body-sm" href="about.html">About Bettiah Atelier</a>
+            <a class="font-body-sm text-body-sm" href="contact.html">Customer Concierge</a>
+          </nav>
+        </div>
+      </div>
+      <div class="pt-space-xl flex flex-col md:flex-row items-center justify-between text-center md:text-left text-xs text-[#F7F1E7]/60">
+        <p>© 2026 Thrift Store by Nawab. Bettiah, Bihar, India.</p>
+        <div class="flex gap-4 pt-2 md:pt-0">
+          <a href="about.html">Privacy Policy</a>
+          <a href="contact.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script>
+    // Category Filter JS
+    document.addEventListener('DOMContentLoaded', () => {
+      const tabs = document.querySelectorAll('.filter-tab');
+      const cards = document.querySelectorAll('#shop-product-grid .product-card');
+
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          tabs.forEach(t => {
+            t.classList.remove('bg-primary', 'text-[#F7F1E7]', 'active');
+            t.classList.add('bg-surface-sand', 'text-text-main');
+          });
+          tab.classList.remove('bg-surface-sand', 'text-text-main');
+          tab.classList.add('bg-primary', 'text-[#F7F1E7]', 'active');
+
+          const cat = tab.getAttribute('data-cat');
+          cards.forEach(card => {
+            if (cat === 'all' || card.getAttribute('data-category') === cat) {
+              card.style.display = 'flex';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+    });
+  </script>
+</body>
+</html>
