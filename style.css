@@ -829,3 +829,44 @@ footer a {
 footer a:hover {
   color: var(--color-accent);
 }
+
+/* Continuous Scrolling Marquee Announcement Bar */
+.announcement-bar-ticker {
+  background-color: var(--color-primary);
+  color: var(--color-background);
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid rgba(176, 138, 74, 0.25);
+}
+
+.marquee-track {
+  display: inline-flex;
+  white-space: nowrap;
+  animation: marquee-scroll 26s linear infinite;
+  will-change: transform;
+}
+
+.announcement-bar-ticker:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+.marquee-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding-right: 2rem;
+}
+
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
