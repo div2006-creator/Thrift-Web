@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Shopping Bag & Checkout | Thrift Store by Nawab</title>
-  <meta name="description" content="Review your curated thrift order, enter shipping address, apply promo codes, and complete secure payment."/>
-  
-  <link rel="stylesheet" href="style.css"/>
+  <meta name="description"
+    content="Review your curated thrift order, enter shipping address, apply promo codes, and complete secure payment." />
+
+  <link rel="stylesheet" href="style.css" />
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <script id="tailwind-config">
     tailwind.config = {
@@ -34,48 +36,61 @@
             "gutter-desktop": "2rem", "container-max": "88rem"
           },
           "fontFamily": {
-            "display-hero": [ "Playfair Display", "Georgia", "serif" ],
-            "headline-xl": [ "Playfair Display", "Georgia", "serif" ],
-            "headline-lg": [ "Playfair Display", "Georgia", "serif" ],
-            "title-editorial": [ "Playfair Display", "Georgia", "serif" ],
-            "body-lg": [ "Plus Jakarta Sans", "sans-serif" ],
-            "body-md": [ "Plus Jakarta Sans", "sans-serif" ],
-            "body-sm": [ "Plus Jakarta Sans", "sans-serif" ],
-            "label-uppercase": [ "Plus Jakarta Sans", "sans-serif" ]
+            "display-hero": ["Playfair Display", "Georgia", "serif"],
+            "headline-xl": ["Playfair Display", "Georgia", "serif"],
+            "headline-lg": ["Playfair Display", "Georgia", "serif"],
+            "title-editorial": ["Playfair Display", "Georgia", "serif"],
+            "body-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "body-md": ["Plus Jakarta Sans", "sans-serif"],
+            "body-sm": ["Plus Jakarta Sans", "sans-serif"],
+            "label-uppercase": ["Plus Jakarta Sans", "sans-serif"]
           }
         }
       }
     };
   </script>
 </head>
+
 <body class="bg-background font-body-md text-text-main antialiased selection:bg-surface-sand selection:text-text-main">
 
   <!-- STICKY HEADER -->
-  <header class="fixed top-0 left-0 w-full z-40 bg-[#F7F1E7]/95 backdrop-blur-md border-b border-border-soft/60 shadow-[0_1px_8px_rgba(0,0,0,0.03)]">
-    <!-- Announcement Bar with Continuous Sideways Scrolling Marquee -->
+  <header
+    class="fixed top-0 left-0 w-full z-40 bg-[#F7F1E7]/95 backdrop-blur-md border-b border-border-soft/60 shadow-[0_1px_8px_rgba(0,0,0,0.03)]">
+    <!-- Announcement Bar with Continuous Sideways Moving Marquee -->
     <div class="announcement-bar-ticker text-accent">
-      <div class="marquee-track whitespace-nowrap">
-        <span class="marquee-item">✦ PREMIUM CURATED VINTAGE & THRIFT ✦ FRESH ARCHIVAL DROPS EVERY WEEK ✦ 100% STEAM SANITIZED AT BETTIAH ATELIER ✦ FREE EXPRESS SHIPPING OVER ₹999 ✦ USE CODE "NAWAB10" FOR 10% OFF ✦</span>
-        <span class="marquee-item">✦ PREMIUM CURATED VINTAGE & THRIFT ✦ FRESH ARCHIVAL DROPS EVERY WEEK ✦ 100% STEAM SANITIZED AT BETTIAH ATELIER ✦ FREE EXPRESS SHIPPING OVER ₹999 ✦ USE CODE "NAWAB10" FOR 10% OFF ✦</span>
-      </div>
+      <marquee behavior="scroll" direction="left" scrollamount="6" onmouseover="this.stop();" onmouseout="this.start();">
+        ✦ PREMIUM CURATED VINTAGE & THRIFT &nbsp;&nbsp;•&nbsp;&nbsp; FRESH ARCHIVAL DROPS EVERY WEEK &nbsp;&nbsp;•&nbsp;&nbsp; 100% STEAM SANITIZED AT BETTIAH ATELIER &nbsp;&nbsp;•&nbsp;&nbsp; FREE EXPRESS SHIPPING OVER ₹999 &nbsp;&nbsp;•&nbsp;&nbsp; USE CODE "NAWAB10" FOR 10% OFF &nbsp;&nbsp;•&nbsp;&nbsp; BETTIAH, BIHAR, INDIA ✦
+      </marquee>
     </div>
-    <div class="h-20 max-w-container-max mx-auto px-gutter-mobile md:px-gutter-desktop flex items-center justify-between">
+    <div
+      class="h-20 max-w-container-max mx-auto px-gutter-mobile md:px-gutter-desktop flex items-center justify-between">
       <div class="flex items-center gap-space-md">
         <a class="flex items-center gap-space-sm text-decoration-none" href="index.html">
-          <img alt="Thrift Store By Nawab Brand Logo" class="h-10 w-auto object-contain rounded border border-accent/40 shadow-sm" src="images/nawab_logo.png"/>
+          <img alt="Thrift Store By Nawab Brand Logo"
+            class="h-10 w-auto object-contain rounded border border-accent/40 shadow-sm" src="images/nawab_logo.png" />
           <div class="flex flex-col">
-            <span class="font-title-editorial text-title-editorial tracking-wider text-text-main font-semibold uppercase">Thrift Store By Nawab</span>
-            <span class="font-caption text-caption text-text-secondary tracking-widest uppercase hidden sm:inline">Bettiah • Archival Recommerce</span>
+            <span
+              class="font-title-editorial text-title-editorial tracking-wider text-text-main font-semibold uppercase">Thrift
+              Store By Nawab</span>
+            <span
+              class="font-caption text-caption text-text-secondary tracking-widest uppercase hidden sm:inline">Bettiah •
+              Archival Recommerce</span>
           </div>
         </a>
       </div>
       <nav class="hidden lg:flex items-center gap-space-xl" id="desktop-nav">
-        <a class="nav-link font-label-uppercase text-label-uppercase text-text-secondary hover:text-primary transition-colors py-space-xs uppercase" href="index.html">Home</a>
-        <a class="nav-link font-label-uppercase text-label-uppercase text-text-secondary hover:text-primary transition-colors py-space-xs uppercase" href="shop.html">Shop</a>
-        <a class="nav-link font-label-uppercase text-label-uppercase text-text-secondary hover:text-primary transition-colors py-space-xs uppercase" href="collections.html">Collections</a>
-        <a class="nav-link font-label-uppercase text-label-uppercase text-text-secondary hover:text-primary transition-colors py-space-xs uppercase" href="wholesale.html">Wholesale</a>
-        <a class="nav-link font-label-uppercase text-label-uppercase text-text-secondary hover:text-primary transition-colors py-space-xs uppercase" href="about.html">About Us</a>
-        <a class="nav-link font-label-uppercase text-label-uppercase text-text-secondary hover:text-primary transition-colors py-space-xs uppercase" href="contact.html">Contact</a>
+        <a class="nav-link font-label-uppercase text-label-uppercase text-text-secondary hover:text-primary transition-colors py-space-xs uppercase"
+          href="index.html">Home</a>
+        <a class="nav-link font-label-uppercase text-label-uppercase text-text-secondary hover:text-primary transition-colors py-space-xs uppercase"
+          href="shop.html">Shop</a>
+        <a class="nav-link font-label-uppercase text-label-uppercase text-text-secondary hover:text-primary transition-colors py-space-xs uppercase"
+          href="collections.html">Collections</a>
+        <a class="nav-link font-label-uppercase text-label-uppercase text-text-secondary hover:text-primary transition-colors py-space-xs uppercase"
+          href="wholesale.html">Wholesale</a>
+        <a class="nav-link font-label-uppercase text-label-uppercase text-text-secondary hover:text-primary transition-colors py-space-xs uppercase"
+          href="about.html">About Us</a>
+        <a class="nav-link font-label-uppercase text-label-uppercase text-text-secondary hover:text-primary transition-colors py-space-xs uppercase"
+          href="contact.html">Contact</a>
       </nav>
       <div class="flex items-center gap-space-sm">
         <span class="font-label-uppercase text-accent font-semibold flex items-center gap-1">
@@ -89,8 +104,9 @@
   <!-- MAIN CART & CHECKOUT -->
   <main class="w-full pt-28 bg-background main-content pb-space-5xl">
     <div class="max-w-container-max mx-auto px-gutter-mobile md:px-gutter-desktop">
-      
-      <div class="border-b border-border-soft pb-space-xl mb-space-3xl flex flex-col md:flex-row md:items-end justify-between gap-4">
+
+      <div
+        class="border-b border-border-soft pb-space-xl mb-space-3xl flex flex-col md:flex-row md:items-end justify-between gap-4">
         <div>
           <span class="font-label-uppercase text-accent font-semibold">YOUR ARCHIVE COLLECTION</span>
           <h1 class="font-headline-xl text-headline-xl text-text-main">SHOPPING BAG & CHECKOUT</h1>
@@ -102,22 +118,24 @@
       </div>
 
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-3xl">
-        
+
         <!-- Cart Items & Delivery Form -->
         <div class="lg:col-span-7 flex flex-col gap-space-2xl">
-          
+
           <!-- Bag Items -->
           <div class="bg-card-bg border border-border-soft p-space-xl flex flex-col gap-space-md">
-            <h2 class="font-title-editorial text-title-editorial text-text-main border-b border-border-soft pb-space-xs font-semibold">
+            <h2
+              class="font-title-editorial text-title-editorial text-text-main border-b border-border-soft pb-space-xs font-semibold">
               ITEMS IN BAG (<span id="cart-item-count">1</span>)
             </h2>
-            
+
             <div id="checkout-cart-list" class="flex flex-col gap-space-md">
               <!-- Item 1 -->
               <div class="flex items-center justify-between border-b border-border-soft/40 pb-space-md">
                 <div class="flex items-center gap-space-md">
                   <div class="w-20 h-24 bg-surface-sand border border-border-soft overflow-hidden">
-                    <img alt="Vintage Italian Wool Trench" class="w-full h-full object-cover" src="images/item_linen_shirt.png"/>
+                    <img alt="Vintage Italian Wool Trench" class="w-full h-full object-cover"
+                      src="images/item_linen_shirt.png" />
                   </div>
                   <div class="flex flex-col">
                     <span class="font-label-uppercase text-accent text-[10px]">Bettiah Archive #402</span>
@@ -134,68 +152,81 @@
 
             <!-- Promo Code Input -->
             <div class="pt-space-sm flex gap-space-xs">
-              <input id="coupon-code" type="text" placeholder="Promo code (Try NAWAB10)" class="flex-1 bg-surface-sand border border-border-soft px-3 py-2 text-sm font-semibold uppercase"/>
+              <input id="coupon-code" type="text" placeholder="Promo code (Try NAWAB10)"
+                class="flex-1 bg-surface-sand border border-border-soft px-3 py-2 text-sm font-semibold uppercase" />
               <button id="apply-coupon" type="button" class="btn-primary px-4 py-2 text-xs">APPLY</button>
             </div>
-            <div id="coupon-msg" class="text-xs text-accent hidden">✓ Code "NAWAB10" applied! 10% discount subtracted.</div>
+            <div id="coupon-msg" class="text-xs text-accent hidden">✓ Code "NAWAB10" applied! 10% discount subtracted.
+            </div>
           </div>
 
           <!-- Delivery Address Form -->
           <div class="bg-card-bg border border-border-soft p-space-xl flex flex-col gap-space-md">
-            <h2 class="font-title-editorial text-title-editorial text-text-main border-b border-border-soft pb-space-xs font-semibold">
+            <h2
+              class="font-title-editorial text-title-editorial text-text-main border-b border-border-soft pb-space-xs font-semibold">
               SHIPPING ADDRESS (ALL INDIA)
             </h2>
             <form id="checkout-form" class="flex flex-col gap-space-md">
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
                 <div>
                   <label class="block font-label-uppercase text-xs mb-1">Full Name *</label>
-                  <input required type="text" placeholder="Hiba Nawab" class="w-full bg-surface-sand border border-border-soft p-2.5 text-sm"/>
+                  <input required type="text" placeholder="Hiba Nawab"
+                    class="w-full bg-surface-sand border border-border-soft p-2.5 text-sm" />
                 </div>
                 <div>
                   <label class="block font-label-uppercase text-xs mb-1">Mobile / WhatsApp *</label>
-                  <input required type="tel" placeholder="+91 98765 43210" class="w-full bg-surface-sand border border-border-soft p-2.5 text-sm"/>
+                  <input required type="tel" placeholder="+91 98765 43210"
+                    class="w-full bg-surface-sand border border-border-soft p-2.5 text-sm" />
                 </div>
               </div>
               <div>
                 <label class="block font-label-uppercase text-xs mb-1">Street Address / House No. *</label>
-                <input required type="text" placeholder="Flat 402, Royal Residency, Station Road" class="w-full bg-surface-sand border border-border-soft p-2.5 text-sm"/>
+                <input required type="text" placeholder="Flat 402, Royal Residency, Station Road"
+                  class="w-full bg-surface-sand border border-border-soft p-2.5 text-sm" />
               </div>
               <div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md">
                 <div>
                   <label class="block font-label-uppercase text-xs mb-1">City *</label>
-                  <input required type="text" placeholder="Bettiah" class="w-full bg-surface-sand border border-border-soft p-2.5 text-sm"/>
+                  <input required type="text" placeholder="Bettiah"
+                    class="w-full bg-surface-sand border border-border-soft p-2.5 text-sm" />
                 </div>
                 <div>
                   <label class="block font-label-uppercase text-xs mb-1">State *</label>
-                  <input required type="text" placeholder="Bihar" class="w-full bg-surface-sand border border-border-soft p-2.5 text-sm"/>
+                  <input required type="text" placeholder="Bihar"
+                    class="w-full bg-surface-sand border border-border-soft p-2.5 text-sm" />
                 </div>
                 <div>
                   <label class="block font-label-uppercase text-xs mb-1">Pincode *</label>
-                  <input required type="text" placeholder="845438" class="w-full bg-surface-sand border border-border-soft p-2.5 text-sm"/>
+                  <input required type="text" placeholder="845438"
+                    class="w-full bg-surface-sand border border-border-soft p-2.5 text-sm" />
                 </div>
               </div>
 
               <!-- Payment Method Selection -->
               <h3 class="font-label-uppercase text-accent font-semibold pt-2">SELECT PAYMENT METHOD</h3>
               <div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm">
-                <label class="border border-primary bg-surface-sand p-3 flex flex-col items-center justify-center cursor-pointer text-center">
-                  <input type="radio" name="payment" value="upi" checked class="accent-primary mb-1"/>
+                <label
+                  class="border border-primary bg-surface-sand p-3 flex flex-col items-center justify-center cursor-pointer text-center">
+                  <input type="radio" name="payment" value="upi" checked class="accent-primary mb-1" />
                   <span class="font-label-uppercase text-xs font-bold">UPI / GPay / PhonePe</span>
                   <span class="font-caption text-[10px] text-text-secondary">Instant 5% Off</span>
                 </label>
-                <label class="border border-border-soft bg-card-bg p-3 flex flex-col items-center justify-center cursor-pointer text-center">
-                  <input type="radio" name="payment" value="card" class="accent-primary mb-1"/>
+                <label
+                  class="border border-border-soft bg-card-bg p-3 flex flex-col items-center justify-center cursor-pointer text-center">
+                  <input type="radio" name="payment" value="card" class="accent-primary mb-1" />
                   <span class="font-label-uppercase text-xs font-bold">Credit/Debit Card</span>
                   <span class="font-caption text-[10px] text-text-secondary">Visa / Mastercard</span>
                 </label>
-                <label class="border border-border-soft bg-card-bg p-3 flex flex-col items-center justify-center cursor-pointer text-center">
-                  <input type="radio" name="payment" value="cod" class="accent-primary mb-1"/>
+                <label
+                  class="border border-border-soft bg-card-bg p-3 flex flex-col items-center justify-center cursor-pointer text-center">
+                  <input type="radio" name="payment" value="cod" class="accent-primary mb-1" />
                   <span class="font-label-uppercase text-xs font-bold">Cash on Delivery</span>
                   <span class="font-caption text-[10px] text-text-secondary">Verified Address</span>
                 </label>
               </div>
 
-              <button type="submit" class="btn-primary py-4 text-center text-sm font-bold uppercase tracking-widest mt-4">
+              <button type="submit"
+                class="btn-primary py-4 text-center text-sm font-bold uppercase tracking-widest mt-4">
                 CONFIRM ORDER & PLACE CHECKOUT
               </button>
             </form>
@@ -205,9 +236,10 @@
 
         <!-- Order Summary Col -->
         <div class="lg:col-span-5">
-          <div class="bg-secondary-dark text-[#F7F1E7] border border-border-soft p-space-xl flex flex-col gap-space-md sticky top-28 shadow-xl">
+          <div
+            class="bg-secondary-dark text-[#F7F1E7] border border-border-soft p-space-xl flex flex-col gap-space-md sticky top-28 shadow-xl">
             <h2 class="font-headline-sm text-[#F7F1E7] border-b border-white/10 pb-space-xs">ORDER SUMMARY</h2>
-            
+
             <div class="flex flex-col gap-2 text-sm text-[#F7F1E7]/80">
               <div class="flex justify-between">
                 <span>Subtotal</span>
@@ -232,7 +264,8 @@
               <span id="summary-total" class="font-headline-lg text-accent font-bold">₹4,499</span>
             </div>
 
-            <div class="bg-surface-sand/10 border border-accent/30 p-space-sm text-xs text-[#F7F1E7]/80 flex flex-col gap-1">
+            <div
+              class="bg-surface-sand/10 border border-accent/30 p-space-sm text-xs text-[#F7F1E7]/80 flex flex-col gap-1">
               <span class="font-semibold text-accent flex items-center gap-1">
                 <span class="material-symbols-outlined text-[16px]">verified_user</span>
                 Nawab Quality Guarantee
@@ -254,7 +287,8 @@
       <h2 class="font-headline-lg text-text-main">ORDER CONFIRMED!</h2>
       <p class="font-label-uppercase text-accent font-semibold pt-1">ORDER ID: #NAWAB-2026-8892</p>
       <p class="font-body-md text-text-secondary py-4">
-        Thank you for choosing <strong class="text-text-main">Thrift Store by Nawab</strong>. Your package is currently being processed at our Bettiah studio and will ship via Express Delivery within 24 hours.
+        Thank you for choosing <strong class="text-text-main">Thrift Store by Nawab</strong>. Your package is currently
+        being processed at our Bettiah studio and will ship via Express Delivery within 24 hours.
       </p>
       <div class="bg-surface-sand p-4 text-left border border-border-soft text-xs mb-6">
         <p><strong>Shipping To:</strong> Bettiah, Bihar - 845438</p>
@@ -267,7 +301,8 @@
   <div id="toast-container" class="toast-container"></div>
 
   <footer class="site-footer">
-    <div class="max-w-container-max mx-auto px-gutter-mobile md:px-gutter-desktop text-center text-xs text-[#F7F1E7]/60">
+    <div
+      class="max-w-container-max mx-auto px-gutter-mobile md:px-gutter-desktop text-center text-xs text-[#F7F1E7]/60">
       <p>© 2026 Thrift Store by Nawab. Bettiah, Bihar, India.</p>
     </div>
   </footer>
@@ -312,4 +347,5 @@
     });
   </script>
 </body>
+
 </html>

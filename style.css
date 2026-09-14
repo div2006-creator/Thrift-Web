@@ -832,49 +832,71 @@ footer a:hover {
 
 /* Continuous Sideways Scrolling Marquee Announcement Bar */
 .announcement-bar-ticker {
-  background-color: var(--color-primary);
-  color: var(--color-accent);
-  overflow: hidden;
-  position: relative;
-  width: 100%;
+  background-color: #641C2D !important;
+  color: #B08A4A !important;
+  overflow: hidden !important;
+  position: relative !important;
+  width: 100% !important;
   white-space: nowrap !important;
-  display: flex;
-  align-items: center;
-  height: 32px;
-  line-height: 32px;
-  border-bottom: 1px solid rgba(176, 138, 74, 0.25);
+  display: flex !important;
+  align-items: center !important;
+  height: 34px !important;
+  border-bottom: 1px solid rgba(176, 138, 74, 0.3) !important;
+}
+
+.announcement-bar-ticker marquee {
+  width: 100% !important;
+  color: #B08A4A !important;
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.15em !important;
+  text-transform: uppercase !important;
+  line-height: 34px !important;
 }
 
 .marquee-track {
-  display: flex;
-  flex-direction: row;
+  display: inline-flex !important;
   white-space: nowrap !important;
-  flex-shrink: 0;
-  width: max-content;
-  animation: marquee-scroll 25s linear infinite;
+  width: max-content !important;
+  -webkit-animation: marquee-scroll 20s linear infinite !important;
+  animation: marquee-scroll 20s linear infinite !important;
   will-change: transform;
 }
 
 .announcement-bar-ticker:hover .marquee-track {
-  animation-play-state: paused;
+  -webkit-animation-play-state: paused !important;
+  animation-play-state: paused !important;
 }
 
 .marquee-item {
-  display: inline-block;
+  display: inline-block !important;
   white-space: nowrap !important;
-  flex-shrink: 0;
-  padding-right: 3rem;
-  font-size: 11px;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  font-weight: 600;
+  padding-right: 3rem !important;
+  font-size: 11px !important;
+  letter-spacing: 0.15em !important;
+  text-transform: uppercase !important;
+  font-weight: 600 !important;
+}
+
+@-webkit-keyframes marquee-scroll {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
+  }
 }
 
 @keyframes marquee-scroll {
   0% {
-    transform: translateX(0%);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
   100% {
-    transform: translateX(-50%);
+    -webkit-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
   }
 }

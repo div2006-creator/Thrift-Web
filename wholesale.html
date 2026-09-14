@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>B2B Wholesale & Reseller Bundles | Thrift Store by Nawab</title>
-  <meta name="description" content="Start your thrift business in India. Premium graded mystery bales of vintage tees, denim jackets, and shirts shipped from Bettiah, Bihar."/>
-  
-  <link rel="stylesheet" href="style.css"/>
+  <meta name="description"
+    content="Start your thrift business in India. Premium graded mystery bales of vintage tees, denim jackets, and shirts shipped from Bettiah, Bihar." />
+
+  <link rel="stylesheet" href="style.css" />
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <script id="tailwind-config">
     tailwind.config = {
@@ -34,56 +36,74 @@
             "gutter-desktop": "2rem", "container-max": "88rem"
           },
           "fontFamily": {
-            "display-hero": [ "Playfair Display", "Georgia", "serif" ],
-            "headline-xl": [ "Playfair Display", "Georgia", "serif" ],
-            "headline-lg": [ "Playfair Display", "Georgia", "serif" ],
-            "title-editorial": [ "Playfair Display", "Georgia", "serif" ],
-            "body-lg": [ "Plus Jakarta Sans", "sans-serif" ],
-            "body-md": [ "Plus Jakarta Sans", "sans-serif" ],
-            "body-sm": [ "Plus Jakarta Sans", "sans-serif" ],
-            "label-uppercase": [ "Plus Jakarta Sans", "sans-serif" ]
+            "display-hero": ["Playfair Display", "Georgia", "serif"],
+            "headline-xl": ["Playfair Display", "Georgia", "serif"],
+            "headline-lg": ["Playfair Display", "Georgia", "serif"],
+            "title-editorial": ["Playfair Display", "Georgia", "serif"],
+            "body-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "body-md": ["Plus Jakarta Sans", "sans-serif"],
+            "body-sm": ["Plus Jakarta Sans", "sans-serif"],
+            "label-uppercase": ["Plus Jakarta Sans", "sans-serif"]
           }
         }
       }
     };
   </script>
 </head>
+
 <body class="bg-background font-body-md text-text-main antialiased selection:bg-surface-sand selection:text-text-main">
 
   <!-- STICKY HEADER -->
-  <header class="fixed top-0 left-0 w-full z-40 bg-[#F7F1E7]/95 backdrop-blur-md border-b border-border-soft/60 shadow-[0_1px_8px_rgba(0,0,0,0.03)]">
-    <!-- Announcement Bar with Continuous Sideways Scrolling Marquee -->
+  <header
+    class="fixed top-0 left-0 w-full z-40 bg-[#F7F1E7]/95 backdrop-blur-md border-b border-border-soft/60 shadow-[0_1px_8px_rgba(0,0,0,0.03)]">
+    <!-- Announcement Bar with Continuous Sideways Moving Marquee -->
     <div class="announcement-bar-ticker text-accent">
-      <div class="marquee-track whitespace-nowrap">
-        <span class="marquee-item">✦ PREMIUM CURATED VINTAGE & THRIFT ✦ FRESH ARCHIVAL DROPS EVERY WEEK ✦ 100% STEAM SANITIZED AT BETTIAH ATELIER ✦ FREE EXPRESS SHIPPING OVER ₹999 ✦ USE CODE "NAWAB10" FOR 10% OFF ✦</span>
-        <span class="marquee-item">✦ PREMIUM CURATED VINTAGE & THRIFT ✦ FRESH ARCHIVAL DROPS EVERY WEEK ✦ 100% STEAM SANITIZED AT BETTIAH ATELIER ✦ FREE EXPRESS SHIPPING OVER ₹999 ✦ USE CODE "NAWAB10" FOR 10% OFF ✦</span>
-      </div>
+      <marquee behavior="scroll" direction="left" scrollamount="6" onmouseover="this.stop();" onmouseout="this.start();">
+        ✦ PREMIUM CURATED VINTAGE & THRIFT &nbsp;&nbsp;•&nbsp;&nbsp; FRESH ARCHIVAL DROPS EVERY WEEK &nbsp;&nbsp;•&nbsp;&nbsp; 100% STEAM SANITIZED AT BETTIAH ATELIER &nbsp;&nbsp;•&nbsp;&nbsp; FREE EXPRESS SHIPPING OVER ₹999 &nbsp;&nbsp;•&nbsp;&nbsp; USE CODE "NAWAB10" FOR 10% OFF &nbsp;&nbsp;•&nbsp;&nbsp; BETTIAH, BIHAR, INDIA ✦
+      </marquee>
     </div>
-    <div class="h-20 max-w-container-max mx-auto px-gutter-mobile md:px-gutter-desktop flex items-center justify-between">
+    <div
+      class="h-20 max-w-container-max mx-auto px-gutter-mobile md:px-gutter-desktop flex items-center justify-between">
       <div class="flex items-center gap-space-md">
         <a class="flex items-center gap-space-sm text-decoration-none" href="index.html">
-          <img alt="Thrift Store By Nawab Brand Logo" class="h-10 w-auto object-contain rounded border border-accent/40 shadow-sm" src="images/nawab_logo.png"/>
+          <img alt="Thrift Store By Nawab Brand Logo"
+            class="h-10 w-auto object-contain rounded border border-accent/40 shadow-sm" src="images/nawab_logo.png" />
           <div class="flex flex-col">
-            <span class="font-title-editorial text-title-editorial tracking-wider text-text-main font-semibold uppercase">Thrift Store By Nawab</span>
-            <span class="font-caption text-caption text-text-secondary tracking-widest uppercase hidden sm:inline">Bettiah • Archival Recommerce</span>
+            <span
+              class="font-title-editorial text-title-editorial tracking-wider text-text-main font-semibold uppercase">Thrift
+              Store By Nawab</span>
+            <span
+              class="font-caption text-caption text-text-secondary tracking-widest uppercase hidden sm:inline">Bettiah •
+              Archival Recommerce</span>
           </div>
         </a>
       </div>
       <nav class="hidden lg:flex items-center gap-space-xl" id="desktop-nav">
-        <a class="nav-link font-label-uppercase text-label-uppercase text-text-secondary hover:text-primary transition-colors py-space-xs uppercase" href="index.html">Home</a>
-        <a class="nav-link font-label-uppercase text-label-uppercase text-text-secondary hover:text-primary transition-colors py-space-xs uppercase" href="shop.html">Shop</a>
-        <a class="nav-link font-label-uppercase text-label-uppercase text-text-secondary hover:text-primary transition-colors py-space-xs uppercase" href="collections.html">Collections</a>
-        <a aria-current="page" class="nav-link active transition-colors py-space-xs font-label-uppercase text-label-uppercase uppercase text-primary font-bold border-b-2 border-primary" href="wholesale.html">Wholesale</a>
-        <a class="nav-link font-label-uppercase text-label-uppercase text-text-secondary hover:text-primary transition-colors py-space-xs uppercase" href="about.html">About Us</a>
-        <a class="nav-link font-label-uppercase text-label-uppercase text-text-secondary hover:text-primary transition-colors py-space-xs uppercase" href="contact.html">Contact</a>
+        <a class="nav-link font-label-uppercase text-label-uppercase text-text-secondary hover:text-primary transition-colors py-space-xs uppercase"
+          href="index.html">Home</a>
+        <a class="nav-link font-label-uppercase text-label-uppercase text-text-secondary hover:text-primary transition-colors py-space-xs uppercase"
+          href="shop.html">Shop</a>
+        <a class="nav-link font-label-uppercase text-label-uppercase text-text-secondary hover:text-primary transition-colors py-space-xs uppercase"
+          href="collections.html">Collections</a>
+        <a aria-current="page"
+          class="nav-link active transition-colors py-space-xs font-label-uppercase text-label-uppercase uppercase text-primary font-bold border-b-2 border-primary"
+          href="wholesale.html">Wholesale</a>
+        <a class="nav-link font-label-uppercase text-label-uppercase text-text-secondary hover:text-primary transition-colors py-space-xs uppercase"
+          href="about.html">About Us</a>
+        <a class="nav-link font-label-uppercase text-label-uppercase text-text-secondary hover:text-primary transition-colors py-space-xs uppercase"
+          href="contact.html">Contact</a>
       </nav>
       <div class="flex items-center gap-space-sm md:gap-space-md">
-        <button id="open-search-btn" aria-label="Search catalog" class="p-space-xs text-text-secondary hover:text-text-main transition-colors cursor-pointer" type="button">
+        <button id="open-search-btn" aria-label="Search catalog"
+          class="p-space-xs text-text-secondary hover:text-text-main transition-colors cursor-pointer" type="button">
           <span class="material-symbols-outlined text-[22px]">search</span>
         </button>
-        <button id="open-cart-btn" aria-label="Open cart" class="relative p-space-xs text-text-secondary hover:text-text-main transition-colors cursor-pointer" type="button">
+        <button id="open-cart-btn" aria-label="Open cart"
+          class="relative p-space-xs text-text-secondary hover:text-text-main transition-colors cursor-pointer"
+          type="button">
           <span class="material-symbols-outlined text-[22px]">shopping_bag</span>
-          <span id="cart-badge" class="absolute top-1 right-1 w-4 h-4 rounded-full bg-primary text-[#F7F1E7] font-caption text-[10px] leading-none flex items-center justify-center font-bold">1</span>
+          <span id="cart-badge"
+            class="absolute top-1 right-1 w-4 h-4 rounded-full bg-primary text-[#F7F1E7] font-caption text-[10px] leading-none flex items-center justify-center font-bold">1</span>
         </button>
       </div>
     </div>
@@ -92,19 +112,22 @@
   <!-- MAIN WHOLESALE CONTENT -->
   <main class="w-full pt-28 bg-background main-content pb-space-5xl">
     <div class="max-w-container-max mx-auto px-gutter-mobile md:px-gutter-desktop">
-      
+
       <!-- HERO -->
-      <div class="relative bg-secondary-dark text-[#F7F1E7] border border-border-soft overflow-hidden p-space-xl md:p-space-4xl shadow-xl mb-space-4xl">
+      <div
+        class="relative bg-secondary-dark text-[#F7F1E7] border border-border-soft overflow-hidden p-space-xl md:p-space-4xl shadow-xl mb-space-4xl">
         <div class="relative z-10 max-w-3xl flex flex-col gap-space-md">
           <div class="flex items-center gap-2">
             <span class="w-2 h-2 rounded-full bg-accent"></span>
-            <span class="font-label-uppercase text-accent uppercase tracking-widest font-semibold">B2B RESELLER INCUBATOR</span>
+            <span class="font-label-uppercase text-accent uppercase tracking-widest font-semibold">B2B RESELLER
+              INCUBATOR</span>
           </div>
           <h1 class="font-headline-xl text-headline-xl md:font-display-hero text-[#F7F1E7]">
-            LAUNCH YOUR OWN <br/><span class="italic text-accent font-light">THRIFT STORE</span> BUSINESS
+            LAUNCH YOUR OWN <br /><span class="italic text-accent font-light">THRIFT STORE</span> BUSINESS
           </h1>
           <p class="font-body-lg text-[#F7F1E7]/90 leading-relaxed max-w-2xl">
-            Supply your Instagram shop, vintage boutique, or campus pop-up with hand-graded, steam-sanitized A-Grade garments shipped directly from our warehouse in Bettiah, Bihar.
+            Supply your Instagram shop, vintage boutique, or campus pop-up with hand-graded, steam-sanitized A-Grade
+            garments shipped directly from our warehouse in Bettiah, Bihar.
           </p>
           <div class="flex flex-wrap gap-space-md pt-space-xs">
             <a href="#bundles" class="btn-primary">VIEW BALE PACKAGES</a>
@@ -118,13 +141,15 @@
         <div class="text-center max-w-2xl mx-auto mb-space-3xl flex flex-col gap-2">
           <span class="font-label-uppercase text-accent font-semibold">CURATED WHOLESALE BALES</span>
           <h2 class="font-headline-lg text-text-main">SELECT YOUR RESELLER PACKAGE</h2>
-          <p class="font-body-md text-text-secondary">Every bale is 100% steam-sanitized, defect-checked, and packed with high resale potential pieces.</p>
+          <p class="font-body-md text-text-secondary">Every bale is 100% steam-sanitized, defect-checked, and packed
+            with high resale potential pieces.</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-space-xl">
-          
+
           <!-- Package 1 -->
-          <div class="bg-card-bg border border-border-soft p-space-xl flex flex-col justify-between shadow-sm hover:border-accent transition-all">
+          <div
+            class="bg-card-bg border border-border-soft p-space-xl flex flex-col justify-between shadow-sm hover:border-accent transition-all">
             <div class="flex flex-col gap-space-md">
               <span class="font-label-uppercase text-accent font-semibold">STARTER BALE</span>
               <h3 class="font-headline-md text-text-main">50 Pcs Mixed Drop</h3>
@@ -155,8 +180,11 @@
           </div>
 
           <!-- Package 2 (Featured) -->
-          <div class="bg-secondary-dark text-[#F7F1E7] border-2 border-accent p-space-xl flex flex-col justify-between shadow-xl relative">
-            <div class="absolute -top-3 right-6 bg-accent text-secondary-dark font-label-uppercase px-3 py-1 text-[10px] font-bold">MOST POPULAR</div>
+          <div
+            class="bg-secondary-dark text-[#F7F1E7] border-2 border-accent p-space-xl flex flex-col justify-between shadow-xl relative">
+            <div
+              class="absolute -top-3 right-6 bg-accent text-secondary-dark font-label-uppercase px-3 py-1 text-[10px] font-bold">
+              MOST POPULAR</div>
             <div class="flex flex-col gap-space-md">
               <span class="font-label-uppercase text-accent font-semibold">PRO RESELLER BALE</span>
               <h3 class="font-headline-md text-[#F7F1E7]">100 Pcs Streetwear Bundle</h3>
@@ -183,11 +211,14 @@
                 </li>
               </ul>
             </div>
-            <a href="#inquiry" class="btn-primary w-full text-center mt-6 bg-accent text-secondary-dark hover:bg-white">ORDER PRO BALE</a>
+            <a href="#inquiry"
+              class="btn-primary w-full text-center mt-6 bg-accent text-secondary-dark hover:bg-white">ORDER PRO
+              BALE</a>
           </div>
 
           <!-- Package 3 -->
-          <div class="bg-card-bg border border-border-soft p-space-xl flex flex-col justify-between shadow-sm hover:border-accent transition-all">
+          <div
+            class="bg-card-bg border border-border-soft p-space-xl flex flex-col justify-between shadow-sm hover:border-accent transition-all">
             <div class="flex flex-col gap-space-md">
               <span class="font-label-uppercase text-accent font-semibold">ENTERPRISE BALE</span>
               <h3 class="font-headline-md text-text-main">200 Pcs Master Inventory</h3>
@@ -227,22 +258,26 @@
             <span class="font-label-uppercase text-accent font-semibold">RESELLER MARGIN SIMULATOR</span>
             <h2 class="font-headline-lg text-text-main">CALCULATE YOUR ESTIMATED PROFIT</h2>
             <p class="font-body-md text-text-secondary">
-              See how much income your store can generate by reselling Thrift Store by Nawab graded bales at standard market prices.
+              See how much income your store can generate by reselling Thrift Store by Nawab graded bales at standard
+              market prices.
             </p>
           </div>
           <div class="lg:col-span-7 bg-card-bg border border-border-soft p-space-xl flex flex-col gap-space-md">
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
               <div>
                 <label class="block font-label-uppercase text-xs text-text-secondary mb-1">Select Bale Size</label>
-                <select id="calc-bale" class="w-full bg-surface-sand border border-border-soft p-2.5 text-sm font-semibold">
+                <select id="calc-bale"
+                  class="w-full bg-surface-sand border border-border-soft p-2.5 text-sm font-semibold">
                   <option value="14999-50">Starter Bale (50 pcs - ₹14,999)</option>
                   <option value="28999-100" selected>Pro Bale (100 pcs - ₹28,999)</option>
                   <option value="54999-200">Enterprise Bale (200 pcs - ₹54,999)</option>
                 </select>
               </div>
               <div>
-                <label class="block font-label-uppercase text-xs text-text-secondary mb-1">Avg Resale Price per Pc</label>
-                <select id="calc-resale" class="w-full bg-surface-sand border border-border-soft p-2.5 text-sm font-semibold">
+                <label class="block font-label-uppercase text-xs text-text-secondary mb-1">Avg Resale Price per
+                  Pc</label>
+                <select id="calc-resale"
+                  class="w-full bg-surface-sand border border-border-soft p-2.5 text-sm font-semibold">
                   <option value="599">₹599 / pc (Standard Thrift)</option>
                   <option value="799" selected>₹799 / pc (Curated Vintage)</option>
                   <option value="999">₹999 / pc (Premium Archival)</option>
@@ -251,7 +286,8 @@
             </div>
 
             <!-- Result Box -->
-            <div class="bg-secondary-dark text-[#F7F1E7] p-space-lg flex flex-col sm:flex-row items-center justify-between gap-4 mt-2">
+            <div
+              class="bg-secondary-dark text-[#F7F1E7] p-space-lg flex flex-col sm:flex-row items-center justify-between gap-4 mt-2">
               <div>
                 <span class="font-caption text-accent block uppercase tracking-wider">Estimated Gross Revenue</span>
                 <span id="calc-revenue" class="font-headline-lg text-[#F7F1E7] font-bold">₹79,900</span>
@@ -270,22 +306,26 @@
         <div class="text-center mb-space-lg flex flex-col gap-1">
           <span class="font-label-uppercase text-accent font-semibold">DIRECT WAREHOUSE ORDER</span>
           <h2 class="font-headline-lg text-text-main">WHOLESALE INQUIRY & BOOKING</h2>
-          <p class="font-body-sm text-text-secondary">Fill in your store details and our Bettiah team will connect via WhatsApp within 2 hours.</p>
+          <p class="font-body-sm text-text-secondary">Fill in your store details and our Bettiah team will connect via
+            WhatsApp within 2 hours.</p>
         </div>
         <form id="wholesale-form" class="flex flex-col gap-4">
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
               <label class="block font-label-uppercase text-xs mb-1">Full Name</label>
-              <input required type="text" placeholder="Your Name" class="w-full bg-surface-sand border border-border-soft p-2.5 text-sm"/>
+              <input required type="text" placeholder="Your Name"
+                class="w-full bg-surface-sand border border-border-soft p-2.5 text-sm" />
             </div>
             <div>
               <label class="block font-label-uppercase text-xs mb-1">WhatsApp / Phone Number</label>
-              <input required type="tel" placeholder="+91 98765 43210" class="w-full bg-surface-sand border border-border-soft p-2.5 text-sm"/>
+              <input required type="tel" placeholder="+91 98765 43210"
+                class="w-full bg-surface-sand border border-border-soft p-2.5 text-sm" />
             </div>
           </div>
           <div>
             <label class="block font-label-uppercase text-xs mb-1">Store / Instagram Handle Name</label>
-            <input required type="text" placeholder="@your_thrift_store or City Location" class="w-full bg-surface-sand border border-border-soft p-2.5 text-sm"/>
+            <input required type="text" placeholder="@your_thrift_store or City Location"
+              class="w-full bg-surface-sand border border-border-soft p-2.5 text-sm" />
           </div>
           <div>
             <label class="block font-label-uppercase text-xs mb-1">Preferred Bale Category</label>
@@ -298,7 +338,8 @@
           </div>
           <div>
             <label class="block font-label-uppercase text-xs mb-1">Additional Requirements / Delivery City</label>
-            <textarea rows="3" placeholder="Specify city, state or requested garment mix..." class="w-full bg-surface-sand border border-border-soft p-2.5 text-sm"></textarea>
+            <textarea rows="3" placeholder="Specify city, state or requested garment mix..."
+              class="w-full bg-surface-sand border border-border-soft p-2.5 text-sm"></textarea>
           </div>
           <button type="submit" class="btn-primary py-3 text-center w-full uppercase font-bold tracking-wider">
             SUBMIT WHOLESALE INQUIRY
@@ -339,7 +380,8 @@
 
   <!-- FOOTER -->
   <footer class="site-footer">
-    <div class="max-w-container-max mx-auto px-gutter-mobile md:px-gutter-desktop text-center text-xs text-[#F7F1E7]/60">
+    <div
+      class="max-w-container-max mx-auto px-gutter-mobile md:px-gutter-desktop text-center text-xs text-[#F7F1E7]/60">
       <p>© 2026 Thrift Store by Nawab. Bettiah, Bihar, India. All Wholesale Inquiries Protected.</p>
     </div>
   </footer>
@@ -380,4 +422,5 @@
     });
   </script>
 </body>
+
 </html>

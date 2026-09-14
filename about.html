@@ -52,12 +52,11 @@
 
   <!-- STICKY HEADER -->
   <header class="fixed top-0 left-0 w-full z-40 bg-[#F7F1E7]/95 backdrop-blur-md border-b border-border-soft/60 shadow-[0_1px_8px_rgba(0,0,0,0.03)]">
-    <!-- Announcement Bar with Continuous Sideways Scrolling Marquee -->
+    <!-- Announcement Bar with Continuous Sideways Moving Marquee -->
     <div class="announcement-bar-ticker text-accent">
-      <div class="marquee-track whitespace-nowrap">
-        <span class="marquee-item">✦ PREMIUM CURATED VINTAGE & THRIFT ✦ FRESH ARCHIVAL DROPS EVERY WEEK ✦ 100% STEAM SANITIZED AT BETTIAH ATELIER ✦ FREE EXPRESS SHIPPING OVER ₹999 ✦ USE CODE "NAWAB10" FOR 10% OFF ✦</span>
-        <span class="marquee-item">✦ PREMIUM CURATED VINTAGE & THRIFT ✦ FRESH ARCHIVAL DROPS EVERY WEEK ✦ 100% STEAM SANITIZED AT BETTIAH ATELIER ✦ FREE EXPRESS SHIPPING OVER ₹999 ✦ USE CODE "NAWAB10" FOR 10% OFF ✦</span>
-      </div>
+      <marquee behavior="scroll" direction="left" scrollamount="6" onmouseover="this.stop();" onmouseout="this.start();">
+        ✦ PREMIUM CURATED VINTAGE & THRIFT &nbsp;&nbsp;•&nbsp;&nbsp; FRESH ARCHIVAL DROPS EVERY WEEK &nbsp;&nbsp;•&nbsp;&nbsp; 100% STEAM SANITIZED AT BETTIAH ATELIER &nbsp;&nbsp;•&nbsp;&nbsp; FREE EXPRESS SHIPPING OVER ₹999 &nbsp;&nbsp;•&nbsp;&nbsp; USE CODE "NAWAB10" FOR 10% OFF &nbsp;&nbsp;•&nbsp;&nbsp; BETTIAH, BIHAR, INDIA ✦
+      </marquee>
     </div>
     <div class="h-20 max-w-container-max mx-auto px-gutter-mobile md:px-gutter-desktop flex items-center justify-between">
       <div class="flex items-center gap-space-md">
