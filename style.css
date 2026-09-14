@@ -830,24 +830,28 @@ footer a:hover {
   color: var(--color-accent);
 }
 
-/* Continuous Scrolling Marquee Announcement Bar */
+/* Continuous Sideways Scrolling Marquee Announcement Bar */
 .announcement-bar-ticker {
   background-color: var(--color-primary);
-  color: var(--color-background);
+  color: var(--color-accent);
   overflow: hidden;
   position: relative;
   width: 100%;
-  white-space: nowrap;
+  white-space: nowrap !important;
   display: flex;
   align-items: center;
-  padding: 0.4rem 0;
+  height: 32px;
+  line-height: 32px;
   border-bottom: 1px solid rgba(176, 138, 74, 0.25);
 }
 
 .marquee-track {
-  display: inline-flex;
-  white-space: nowrap;
-  animation: marquee-scroll 26s linear infinite;
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap !important;
+  flex-shrink: 0;
+  width: max-content;
+  animation: marquee-scroll 25s linear infinite;
   will-change: transform;
 }
 
@@ -856,10 +860,14 @@ footer a:hover {
 }
 
 .marquee-item {
-  display: inline-flex;
-  align-items: center;
-  gap: 1.5rem;
-  padding-right: 2rem;
+  display: inline-block;
+  white-space: nowrap !important;
+  flex-shrink: 0;
+  padding-right: 3rem;
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 @keyframes marquee-scroll {
